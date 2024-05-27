@@ -8,23 +8,28 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "first-aside header header header" "first-article first-article second-aside second-aside" 
-    "third-aside third-aside third-aside third-aside" "second-article second-article second-article ." "footer footer footer footer";
-    grid-template-rows: 1fr 4fr 2fr 4fr 1fr;
+    "third-aside third-aside third-aside third-aside" "second-article second-article second-article second-article" "footer footer footer footer";
+    grid-template-rows: 0.5fr 3fr 2fr 6fr 1fr;
+    font-family: sans-serif;
+    
 }
 
 #first-aside {
     grid-area: first-aside;
+    
 }
 
 .logo {
     
-    width: 100%;
+    width: 80%;
+    padding: 20px 40px 40px 40px;
 }
 
 header {
     grid-area: header;
+    display: grid;
     border-radius: 30px;
     background-color: rgb(247, 207, 213);
     width: 100%;
@@ -34,12 +39,21 @@ header {
 
 }
 
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
 ul {
     list-style-type: none;
-    margin: 0;
     text-align: left;
-    padding: 5px 0px 0px 50px;
     float: left;
+    align-self: center;
+    justify-self: center;
+
 }
 
 li {
@@ -49,24 +63,28 @@ li {
 
 a {
     display: inline-block ;
-    padding: 8px;
     color: black;
     text-decoration: none;
     text-align: center;
 }
 
 #first-article {
-    grid-area: first-article;
-    width: 400px;
-    align-self: center;
+    grid-area: first-article;display: grid;
+    align-self: top;
     justify-self: center;
+    width: 80%;
+    height: 30%;
+    font-size: 20px;
+   
     
 }
 
 #second-aside {
     grid-area:  second-aside;
-    align-self: center;
-    justify-self: center;
+    align-self: top;
+    justify-self: right;
+    padding: 100px;
+
 }
 
 .cookie {
@@ -91,19 +109,39 @@ a {
     border-radius: 25%;
 }
 
-.nieuws {
-    width: 200px;
-}
-
 #third-aside {
     grid-area: third-aside;
+    margin: 150 auto;
     float: left;
     justify-self: center;
     align-self: center;
     background-color: rgb(247, 207, 213);
-    padding: 20px;
     border-radius: 30px;
   
+}
+
+#second-article {
+    grid-area: second-article;
+    background-color: rgb(247, 207, 213);
+    margin: 150px auto auto auto;
+    border-radius: 30px;
+    align-content: center;
+    padding: 50px;
+    width: 70%;
+
+
+}
+
+.artikel {
+    width: 60%;
+    text-align: center;
+   
+}
+
+.nieuws {
+    width: 35%;
+    padding: 20px;
+
 }
 
 
