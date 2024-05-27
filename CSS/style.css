@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(238, 246, 238);
     margin: 0;
     padding: 0;
 
@@ -9,9 +9,9 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "first-aside header header header" "first-article first-article second-aside second-aside" 
-    "third-aside third-aside third-aside third-aside" "second-article second-article second-article second-article" "footer footer footer footer";
-    grid-template-rows: 0.5fr 3fr 2fr 6fr 1fr;
+    grid-template-areas: "first-aside header header header"
+    "first-article first-article third-aside third-aside" "second-article second-article second-article second-article" "footer footer footer footer";
+    grid-template-rows: 0.5fr 3fr 6fr 1fr;
     font-family: sans-serif;
     
 }
@@ -23,6 +23,7 @@ main {
 
 .logo {
     
+    background-color: rgb(238, 246, 238);
     width: 80%;
     padding: 20px 40px 40px 40px;
 }
@@ -30,6 +31,7 @@ main {
 header {
     grid-area: header;
     display: grid;
+    border: solid 2px rgb(181, 242, 230);
     border-radius: 30px;
     background-color: rgb(247, 207, 213);
     width: 100%;
@@ -88,24 +90,37 @@ a {
 }
 
 .cookie {
-    width: 150px;
-    height: 150px;
+    background-color: rgb(247, 207, 213);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 25%;
 }
 
 .necklace {
-    width: 150px;
+    background-color: rgb(181, 242, 230);
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 25%;
+
 }
 
 .hoodie {
-    width: 150px;
+    background-color: rgb(181, 242, 230);
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 25%;
 }
 
 .trilobite {
-    width: 150px;
-    height: 150px;
+    background-color: rgb(247, 207, 213);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 25%;
 }
 
@@ -115,14 +130,13 @@ a {
     float: left;
     justify-self: center;
     align-self: center;
-    background-color: rgb(247, 207, 213);
     border-radius: 30px;
   
 }
 
 #second-article {
     grid-area: second-article;
-    background-color: rgb(247, 207, 213);
+    border: solid 5px rgb(247, 207, 213);
     margin: 150px auto auto auto;
     border-radius: 30px;
     align-content: center;
