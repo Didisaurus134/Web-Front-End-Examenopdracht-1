@@ -3,14 +3,15 @@ body {
     margin: 0;
     padding: 0;
 
+
 }
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-areas: "first-aside header header header" "first-article first-article second-aside second-aside" 
     "third-aside third-aside third-aside third-aside" "second-article second-article second-article ." "footer footer footer footer";
-    grid-template-rows: 1fr 4fr 2fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 3fr 1fr;
 }
 
 #first-aside {
@@ -18,45 +19,72 @@ main {
 }
 
 .logo {
-    width: 250px;
-    height: auto;
-    padding: 0px 0px 0px 25px;
-    float: left;
+    
+    width: 100%;
 }
 
 header {
     grid-area: header;
     border-radius: 30px;
     background-color: rgb(247, 207, 213);
-    margin: 20px 0px 0px 50px;
-    width: 800px;
+    width: 100%;
     height: 50px;
     float: left;
+    align-self: center;
 
 }
 
 ul {
     list-style-type: none;
     margin: 0;
+    text-align: left;
     padding: 5px 0px 0px 50px;
 }
 
 li {
-    float: left;
-    padding: 0px 30px 0px 0px;
+    display: inline-block ;
+    padding: 0px 50px 0px 0px;
 }
 
 a {
-    display: block;
+    display: inline-block ;
     padding: 8px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
 }
 
 #first-article {
     grid-area: first-article;
+    width: 400px;
     align-self: center;
+    justify-self: center;
+    
 }
 
-.welkomstekst {
-    width: auto;
+#second-aside {
+    grid-area:  second-aside;
+    align-self: center;
+    justify-self: center;
+}
+
+.cookie {
+    width: 200px;
+}
+
+.necklace {
+    width: 200px;
+}
+
+.hoodie {
+    width: 200px;
+}
+
+.trilobite {
+    width: 200px;
+}
+
+.nieuws {
+    width: 200px;
 }
 
