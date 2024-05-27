@@ -1,7 +1,13 @@
 body {
     background-color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr) ;
     grid-template-areas: "first-aside header header header" "first-article first-article second-aside second-aside" 
     "third-aside third-aside third-aside third-aside" "second-article second-article second-article ." "footer footer footer footer";
     grid-template-rows: 1fr 4fr 2fr 4fr 1fr;
@@ -43,5 +49,14 @@ li {
 a {
     display: block;
     padding: 8px;
+}
+
+#first-article {
+    grid-area: first-article;
+    align-self: center;
+}
+
+.welkomstekst {
+    width: auto;
 }
 
