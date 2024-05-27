@@ -2,9 +2,9 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr 2fr 4fr 1fr;
     grid-template-areas: "first-aside header header header" "first-article first-article second-aside second-aside" 
     "third-aside third-aside third-aside third-aside" "second-article second-article second-article ." "footer footer footer footer";
+    grid-template-rows: 1fr 4fr 2fr 4fr 1fr;
 }
 
 #first-aside {
@@ -15,6 +15,33 @@ body {
     width: 250px;
     height: auto;
     padding: 0px 0px 0px 25px;
+    float: left;
 }
 
+header {
+    grid-area: header;
+    border-radius: 30px;
+    background-color: rgb(247, 207, 213);
+    margin: 20px 0px 0px 50px;
+    width: 800px;
+    height: 50px;
+    float: left;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0px 0px 50px;
+}
+
+li {
+    float: left;
+    padding: 0px 30px 0px 0px;
+}
+
+a {
+    display: block;
+    padding: 8px;
+}
 
