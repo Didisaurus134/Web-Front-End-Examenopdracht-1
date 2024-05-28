@@ -6,6 +6,9 @@
     <title>Treasure-Rex</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
+
+/* link naar logo, hoveren over menubalk, bodytekst allemaal even groot, afscheiden nieuws met nieuwe kleur tekst naast foto dino als div in 1 blokje, afbeeldingen artikel rond, footer hoger met logo en menu overvieuw contact gegevens
+lettertype footer zelfde als rest */
 <body>
     <main>
 
@@ -13,11 +16,10 @@
         <header>
             <nav>
              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Dinonieuws</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">Over ons</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
              </ul>
          </nav>
         </header>
@@ -35,15 +37,18 @@
         <aside id="third-aside">
             <div class="products">
                 <ul>
-                    <li><img src="Foto's gadgets/Gadgets/anky cookie cutter.jpg" alt="Ankylosaurus cookie cutter" style="float: left; margin-right: 10px;" class="cookie"></li>
-                    <li><img src="Foto's gadgets/Juwelen/cute-dinosaur-necklace.jpg" alt="Langnek dinosaurus ketting" style="float: left; margin-right: 10px;" class="necklace"></li>
-                    <li><img src="Foto's gadgets/Kledij/dino-hoodie-1.jpg" alt="Hoodie met een dinosaurus cartoon" style="float: left; margin-right: 10px;" class="hoodie"></li>
-                    <li><img src="Foto's gadgets/Fossielen/Trilobite-35-jpg.webp" alt="Trilobiet fossiel" style="float: left; margin-right: 10px;" class="trilobite"></li>
+                    <li><img src="Foto's gadgets/Gadgets/anky cookie cutter.jpg" alt="Ankylosaurus cookie cutter" onclick="location.href='gadgets.html'"  style="float: left; margin-right: 10px;" class="cookie"></li>
+                    <li><img src="Foto's gadgets/Juwelen/cute-dinosaur-necklace.jpg" alt="Langnek dinosaurus ketting" onclick="location.href='jewelry.html'"  style="float: left; margin-right: 10px;" class="necklace"></li>
+                    <li><img src="Foto's gadgets/Kledij/dino-hoodie-1.jpg" alt="Hoodie met een dinosaurus cartoon" onclick="location.href='clothing.html'"  style="float: left; margin-right: 10px;" class="hoodie"></li>
+                    <li><img src="Foto's gadgets/Fossielen/Trilobite-35-jpg.webp" alt="Trilobiet fossiel" onclick="location.href='fossils.html'"  style="float: left; margin-right: 10px;" class="trilobite"></li>
                 </ul>
             </div>
         </aside>
 
+        <p class="marquee" id="scroll"><span></span></p>
+        <marquee id="scroll" behavior="scroll" direction="left">DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws</marquee>
         <article id="second-article">
+        
             <div class="artikel"></div>
             <img src="Foto's gadgets/article dino.jpg" alt="Nieuwe Tyranosaurus Rex soort" style="float: left ;" class="nieuws">
             <H2>Paleontologen door het dolle heen: na 40 jaar nieuwe, nog grotere T. rex ontdekt</H2>
