@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,68 +8,141 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-/* link naar logo, hoveren over menubalk, bodytekst allemaal even groot, afscheiden nieuws met nieuwe kleur tekst naast foto dino als div in 1 blokje, afbeeldingen artikel rond, footer hoger met logo en menu overvieuw contact gegevens
-lettertype footer zelfde als rest */
+
 <body>
     <main>
 
         <img src="/Foto's gadgets/logo treasure-rex.jpg" alt="Logo Treasure-Rex" class="logo" id="first-aside">
         <header>
             <nav>
-             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">Over ons</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-             </ul>
-         </nav>
+                <ul class="header-ul">
+                    <li class="li-1"><a href="index.html">Home</a></li>
+                    <li class="li-1"><a href="about-us.html">Over ons</a></li>
+                    <li class="li-1"><a href="shop.html">Shop</a></li>
+                    <li class="li-1"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <article id="first-article">
-        <H1 class="Titel">Ga mee op reis door de tijd</H1>
-        <h2 class="Ondertitel">Welkom bij de ultieme webshop voor dinoliefhebbers!</h2>
-        <p class="Welkom">Hier vind je een assortiment van de leukste gadgets, sieraden en kledij. Allemaal in dinosaurus thema
-            en als kers op de taart ook echte fossielen.
-            Naast ons ruim assortiment van leuke producten, delen we graag onze liefde voor paleontologie.
-            Bij dinonieuws vind je de laatse nieuwe fossiele vondsten en spannende ontdekkingen in de wereld van de dinosaurussen.
-        </p>
+            <H1 class="Titel">Ga mee op reis door de tijd</H1>
+            <h2 class="Ondertitel">Welkom bij de ultieme webshop voor dinoliefhebbers!</h2>
+            <p class="welkom">Hier vind je een assortiment van de leukste gadgets, sieraden en kledij. Allemaal in
+                dinosaurus thema
+                en als kers op de taart ook echte fossielen. <br>
+                Naast ons ruim assortiment van leuke producten, delen we graag onze liefde voor paleontologie.
+                Onderaan de homepage vind je steeds nieuws over een recente ontdekking!
+            </p>
         </article>
 
         <aside id="third-aside">
             <div class="products">
                 <ul>
-                    <li><img src="Foto's gadgets/Gadgets/anky cookie cutter.jpg" alt="Ankylosaurus cookie cutter" onclick="location.href='gadgets.html'"  style="float: left; margin-right: 10px;" class="cookie"></li>
-                    <li><img src="Foto's gadgets/Juwelen/cute-dinosaur-necklace.jpg" alt="Langnek dinosaurus ketting" onclick="location.href='jewelry.html'"  style="float: left; margin-right: 10px;" class="necklace"></li>
-                    <li><img src="Foto's gadgets/Kledij/dino-hoodie-1.jpg" alt="Hoodie met een dinosaurus cartoon" onclick="location.href='clothing.html'"  style="float: left; margin-right: 10px;" class="hoodie"></li>
-                    <li><img src="Foto's gadgets/Fossielen/Trilobite-35-jpg.webp" alt="Trilobiet fossiel" onclick="location.href='fossils.html'"  style="float: left; margin-right: 10px;" class="trilobite"></li>
+                    <li class="li-2"><img src="Foto's gadgets/Gadgets/anky cookie cutter.jpg" alt="Ankylosaurus cookie cutter"
+                            onclick="location.href='gadgets.html'" style="float: left; margin-right: 10px;"
+                            class="cookie"></li>
+                    <li class="li-2"><img src="Foto's gadgets/Juwelen/cute-dinosaur-necklace.jpg" alt="Langnek dinosaurus ketting"
+                            onclick="location.href='jewelry.html'" style="float: left; margin-right: 10px;"
+                            class="necklace"></li>
+                    <li class="li-2"><img src="Foto's gadgets/Kledij/dino-hoodie-1.jpg" alt="Hoodie met een dinosaurus cartoon"
+                            onclick="location.href='clothing.html'" style="float: left; margin-right: 10px;"
+                            class="hoodie"></li>
+                    <li class="li-2"><img src="Foto's gadgets/Fossielen/Trilobite-35-jpg.webp" alt="Trilobiet fossiel"
+                            onclick="location.href='fossils.html'" style="float: left; margin-right: 10px;"
+                            class="trilobite"></li>
                 </ul>
             </div>
         </aside>
 
-        <p class="marquee" id="scroll"><span></span></p>
-        <marquee id="scroll" behavior="scroll" direction="left">DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws  DinoNieuws</marquee>
-        <article id="second-article">
         
-            <div class="artikel"></div>
-            <img src="Foto's gadgets/article dino.jpg" alt="Nieuwe Tyranosaurus Rex soort" style="float: left ;" class="nieuws">
-            <H2>Paleontologen door het dolle heen: na 40 jaar nieuwe, nog grotere T. rex ontdekt</H2>
-            <p>Paleontologen zijn in rep en roer door de ontdekking van een nieuwe tyrannosaurus. De soort leefde miljoenen jaren eerder dan de bekende T. rex, maar was nog groter dan zijn beroemde nazaat. 
-                De Tyrannosaurus mcraensis, zoals de nieuwe dino heet, is volgens wetenschappers waarschijnlijk de meest angstaanjagende jager die ooit heeft geleefd.</p>
-                <p>Paleontologen vonden in de jaren 80 een deel van een schedel van de dino in de Amerikaanse staat New Mexico, preciezer gezegd in de geologische formatie McRae, waar meerdere goed goed geconserveerde overblijfselen van dinosaurussen zijn gevonden. De nieuwe soort is vernoemd naar zijn vindplek.</p>
-                <p>De Tyrannosaurus rex behoort tot de grootste roofdieren die op aarde hebben geleefd. Wetenschappers schatten dat er ongeveer 2,5 miljard tyrannosaurussen op aarde hebben rondgelopen. Tot nu toe zijn er echter slechts dertig tot veertig min of meer intacte skeletten gevonden, allemaal in de Verenigde Staten.</p>
-            <img src="Foto's gadgets/article-dino.1.jpg" alt="Gevonden botten nieuwe Tyrannosaurus Rex soort" style="float: right;" class="nieuws">
-            <h2>Kleine afwijkingen</h2>
-            <p>De schedel van de nieuwe soort vertoont veel overeenkomsten met die van een Tyrannosaurus rex. Wetenschappers hadden vanwege kleine afwijkingen altijd al een vermoeden dat ze met een andere dino te maken hadden. Nu, ruim veertig jaar later, weten ze het zeker: de twaalf meter hoge T-rex had een nog veel machtigere voorouder, concluderen ze in het wetenschappelijke tijdschrift Nature.</p>
-            <p>De machtige Tyrannosaurus mcraensis zou tussen 71 en 73 miljoen jaar geleden geleefd hebben, zo’n vijf á zeven miljoen voor zijn illustere nakomeling. Volgens de wetenschappers heeft deze dino een krommere onderkaak, een iets slankere schedel en zitten zijn ‘wenkbrauwen’ een stuk lager. Hoewel de twee erg op elkaar lijken, denken paleontologen dat deze soort anders at en jaagde dan de rex. Wel zouden ze aan elkaar gewaagd zijn geweest.</p>
-            <p>Ongeveer een kwart van de schedel is door wetenschappers gevonden. Het grootste deel van de hersenpan en de bovenkaken ontbreken. Paleontologen zijn in extase door de ontdekking, omdat het een nieuwe wending brengt aan de langlopende discussie over hoeveel soorten tyrannosaurussen er nu eigenlijk waren. Mogelijk dat we nu meer te weten komen over hoe het iconische roofdier in de loop der tijd is geëvolueerd.</p>
-            <h2>Dol op drumsticks</h2>
-            <p>Onderzoeken naar de oorsprong van dinosaurussen zijn al jaren in volle gang. In december vorig jaar ontdekten wetenschappers voor het eerst prooien in de maag van een tyrannosaurus-skelet, waaruit zou blijken dat de machtige dinosauriërs ‘dol waren op drumsticks’ toen ze jong waren. De restanten werden ontdekt in de fossielen van een Gorgosaurus, een lid van de vleesetende familie waartoe ook de latere T-Rex behoort.</p>
-            <p>De Gorgosaurus was ongeveer zes jaar oud toen hij 75 miljoen jaar geleden stierf in wat nu Canada is, meldt een studie in het tijdschrift Science Advances. De onderzoekers ontdekten overblijfselen van de laatste maaltijd van deze jonge, 4,5 meter lange tyrannosaurus die nog steeds op zijn plaats bewaard waren gebleven.</p>
-            <p>Het meest verrassende was, aldus de wetenschappers, dat de kleine beenderen die uit de ribbenkast van de Gorgosaurus staken, toebehoorden aan twee jonge, vogelachtige dinosaurussen genaamd Citipes. Volwassen dieren aten veel grotere prooien.</p>
-            </div>
-        </article>
+            <marquee id="scroll" behavior="scroll" direction="left">DinoNieuws DinoNieuws DinoNieuws DinoNieuws
+                DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws
+                DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws
+                DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws
+                DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws DinoNieuws
+            </marquee>
 
+            
+            <div class="artikel" id="second-article" >
+                <article class="article" >
+                
+                    <H2>Paleontologen door het dolle heen: na 40 jaar nieuwe, nog grotere T. rex ontdekt</H2>
+                <img src="Foto's gadgets/article dino.jpg" alt="Nieuwe Tyranosaurus Rex soort" style="float: left ;"
+                    class="nieuws-afbeelding-1">
+                <div class="first-textblock">
+                
+                <p>Paleontologen zijn in rep en roer door de ontdekking van een nieuwe tyrannosaurus. De soort leefde
+                    miljoenen jaren eerder dan de bekende T. rex, maar was nog groter dan zijn beroemde nazaat.
+                    De Tyrannosaurus mcraensis, zoals de nieuwe dino heet, is volgens wetenschappers waarschijnlijk de
+                    meest angstaanjagende jager die ooit heeft geleefd.</p>
+                <p>Paleontologen vonden in de jaren 80 een deel van een schedel van de dino in de Amerikaanse staat New
+                    Mexico, preciezer gezegd in de geologische formatie McRae, waar meerdere goed goed geconserveerde
+                    overblijfselen van dinosaurussen zijn gevonden. De nieuwe soort is vernoemd naar zijn vindplek.</p>
+                <p>De Tyrannosaurus rex behoort tot de grootste roofdieren die op aarde hebben geleefd. Wetenschappers
+                    schatten dat er ongeveer 2,5 miljard tyrannosaurussen op aarde hebben rondgelopen. Tot nu toe zijn
+                    er echter slechts dertig tot veertig min of meer intacte skeletten gevonden, allemaal in de
+                    Verenigde Staten.</p>
+                </div>
+                <img src="Foto's gadgets/article-dino.1.jpg" alt="Gevonden botten nieuwe Tyrannosaurus Rex soort"
+                    style="float: right;" class="nieuws-afbeelding-2">
+
+                <div class="first-textblock">
+                <h2>Kleine afwijkingen</h2>
+                <p>De schedel van de nieuwe soort vertoont veel overeenkomsten met die van een Tyrannosaurus rex.
+                    Wetenschappers hadden vanwege kleine afwijkingen altijd al een vermoeden dat ze met een andere dino
+                    te maken hadden. Nu, ruim veertig jaar later, weten ze het zeker: de twaalf meter hoge T-rex had een
+                    nog veel machtigere voorouder, concluderen ze in het wetenschappelijke tijdschrift Nature.</p>
+                <p>De machtige Tyrannosaurus mcraensis zou tussen 71 en 73 miljoen jaar geleden geleefd hebben, zo’n
+                    vijf tot zeven miljoen voor zijn illustere nakomeling. Volgens de wetenschappers heeft deze dino een
+                    krommere onderkaak, een iets slankere schedel en zitten zijn ‘wenkbrauwen’ een stuk lager. Hoewel de
+                    twee erg op elkaar lijken, denken paleontologen dat deze soort anders at en jaagde dan de rex. Wel
+                    zouden ze aan elkaar gewaagd zijn geweest.</p>
+                <p>Ongeveer een kwart van de schedel is door wetenschappers gevonden. Het grootste deel van de hersenpan
+                    en de bovenkaken ontbreken. Paleontologen zijn in extase door de ontdekking, omdat het een nieuwe
+                    wending brengt aan de langlopende discussie over hoeveel soorten tyrannosaurussen er nu eigenlijk
+                    waren. Mogelijk dat we nu meer te weten komen over hoe het iconische roofdier zich in de loop der tijd heeft ontwikkeld.</p>
+                </div>
+
+                <img src="Foto's gadgets/tyrannosaurus_mcraensis_size.jpg" alt="Verschil groote tussen tyrannosaurus en mens" style="float: left;" class="nieuws-afbeelding-3">
+                <div class="first-textblock">
+                <h2>Dol op drumsticks</h2>
+                <p>Onderzoeken naar de oorsprong van dinosaurussen zijn al jaren in volle gang. In december vorig jaar
+                    ontdekten wetenschappers voor het eerst prooien in de maag van een tyrannosaurus-skelet, waaruit zou
+                    blijken dat de machtige dinosaurussen ‘dol waren op drumsticks’ toen ze jong waren. De restanten
+                    werden ontdekt in de fossielen van een Gorgosaurus, een lid van de vleesetende familie waartoe ook
+                    de latere T-Rex behoort.</p>
+                <p>De Gorgosaurus was ongeveer zes jaar oud toen hij 75 miljoen jaar geleden stierf in wat nu Canada is,
+                    meldt een studie in het tijdschrift Science Advances. De onderzoekers ontdekten overblijfselen van
+                    de laatste maaltijd van deze jonge, 4,5 meter lange tyrannosaurus die nog steeds op zijn plaats
+                    bewaard waren gebleven.</p>
+                <p>Het meest verrassende was, aldus de wetenschappers, dat de kleine beenderen die uit de ribbenkast van
+                    de Gorgosaurus staken, toebehoorden aan twee jonge, vogelachtige dinosaurussen genaamd Citipes.
+                    Volwassen dieren aten veel grotere prooien.</p>
+                </div>
+                </article>
+            </div>
+    
+            <div id="footer">
+                <img src="/Foto's gadgets/logo treasure-rex footer.jpg" alt="Logo Treasure-Rex" class="logo-footer">
+            <footer>
+                <p class="text-footer">
+                    Treasure-Rex <br>
+                    Ankylosauruslaan 68 <br>
+                    7320 Bernissart <br>
+                    contact@treasure-rex.be <br><br>
+                    &copy; Oomens Didi - WFB@Home - Howest 
+                </p>
+                <ul class="ul-footer">
+                <li class="navigatie-footer"><a href="index.html">Home</a></li>
+                <li class="navigatie-footer"><a href="about-us.html">Over ons</a></li>
+                <li class="navigatie-footer"><a href="shop.html">Shop</a></li>
+                <li class="navigatie-footer"><a href="contact.html">Contact</a></li></ul>
+                <br><br><br>
+               
+            </footer>
+            </div>
     </main>
-    <footer>&copy; Oomens Didi - WFB@Home - Howest</footer>
+    
 </body>
+
 </html>
