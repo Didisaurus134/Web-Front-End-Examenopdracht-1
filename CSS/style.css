@@ -307,7 +307,7 @@ font-size: 25px;
     position: absolute;
     grid-area: third-aside;
     top: 232px;
-    right: 574px;
+    right: 562px;
     font-size: 50px;
     background: rgba(248, 180, 190);
     color: black;
@@ -322,7 +322,7 @@ font-size: 25px;
     position: absolute;
     grid-area: third-aside;
     top: 232px;
-    right: 279px;
+    right: 266px;
     font-size: 50px;
     padding: 82px 58px;
     visibility: hidden;
@@ -337,7 +337,7 @@ font-size: 25px;
     position: absolute;
     grid-area: third-aside;
     top: 530px;
-    right: 574px;
+    right: 562px;
     font-size: 50px;
     padding: 80px 73px;
     visibility: hidden;
@@ -351,7 +351,7 @@ font-size: 25px;
     position: absolute;
     grid-area: third-aside;
     top: 530px;
-    right: 277px;
+    right: 266px;
     font-size: 50px;
     background: rgba(248, 180, 190);
     color: black;
@@ -362,11 +362,13 @@ font-size: 25px;
 }
 
 .cookie-2 {
+    position: absolute;
     background-color: rgb(247, 207, 213);
     width: 200px;
     height: 200px;
+    top: 282px;
+    right: 553px;
     padding: 10px;
-    margin: 60px 10px 60px 10px;;
     border-radius: 25%;
 }
 
@@ -404,6 +406,40 @@ font-size: 25px;
 .img-wrap-4:hover .description-4 {
     visibility: visible;
     opacity: 0.4;
+}
+
+.necklace-2 {
+    position: absolute;
+    background-color: rgb(181, 242, 230);
+    top: 282px;
+    right: 255px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25%;
+
+}
+
+
+.hoodie-2 {
+    position: absolute;
+    background-color: rgb(181, 242, 230);
+    top: 578px;
+    right: 553px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+
+.trilobite-2 {
+    position: absolute;
+    background-color: rgb(247, 207, 213);
+    top: 580px;
+    right: 257px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 25%;
 }
 
 
