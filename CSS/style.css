@@ -4,6 +4,7 @@
 }
 
 body {
+    height: 100vh;
     background-color: rgb(238, 246, 238);
     margin: 0;
     padding: 0;
@@ -12,11 +13,12 @@ body {
 }
 
 main {
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "first-aside header header header"
+    grid-template-areas: "header header header header"
     "first-article first-article third-aside third-aside" "scroll scroll scroll scroll" "second-article second-article second-article second-article" "footer footer footer footer";
-    grid-template-rows: 0.3fr 3fr 0.2fr 6fr 0.5fr;
+    grid-template-rows: max-content 3fr 0.2fr 6fr max-content;
     font-family: myFirstFont;
     font-size: 30px;
     
@@ -31,20 +33,25 @@ main {
     
 }
 
+.header {
+    grid-area: header;
+    width: fit-content;
+}
+
 .logo {
     
     background-color: rgb(238, 246, 238);
-    width: 80%;
+    height: 72px;
     padding: 10px 40px 0px 40px;
+    float: left;
 }
 
 header {
-    grid-area: header;
     border-radius: 30px;
     background-color: rgb(247, 207, 213);
-    margin: 30px 0px 0px 30px;
-    width: 90%;
-    height: 50px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 400px 0px 0px;
+    height: auto;
     float: left;
     align-self: center;
 
@@ -103,8 +110,9 @@ a {
     
 }
 
-#first-article {
-    grid-area: first-article;display: grid;
+#introduction {
+    grid-area: first-article;
+    display: grid;
     align-self: top;
     justify-self: center;
     width: 80%;
@@ -118,16 +126,9 @@ a {
     background-color: rgb(181, 242, 230);
     grid-area: scroll;
     font-size: 40px;
-    padding: 50px 0px 50px 0px
+    padding: 50px 0px 50px 0px;
 }
 
-#second-aside {
-    grid-area:  second-aside;
-    align-self: top;
-    justify-self: top;
-    padding: 100px;
-
-}
 
 ul {
     margin: 60px 0px 0px 0px;
@@ -188,7 +189,7 @@ ul {
     background-color: rgb(181, 242, 230);
 }
 
-#third-aside {
+#second-aside {
     grid-area: third-aside;
     margin: 50px auto;
     float: left;
@@ -198,7 +199,7 @@ ul {
   
 }
 
-#second-article {
+#article {
     display: block;
     background-color: rgb(181, 242, 230);
     grid-area: second-article;
@@ -268,9 +269,9 @@ footer {
 
 .logo-footer {
     background-color: rgb(247, 207, 213);
-    width: 25%;
+    height: 80px;;
     float: left;
-    margin: 90px 20px 0px 20px;
+    margin: 125px 20px 0px 20px;
       
 }
 
@@ -297,8 +298,8 @@ margin: 0px 0px 0px 20px;
 font-size: 25px;
 }
 
-.douche {
-    width: 80%;
+.collage {
+    width: 90%;
     margin: 100px 0px 0px 50px;
     border-radius: 30px;
 }
@@ -361,13 +362,47 @@ font-size: 25px;
     border-radius: 25%;
 }
 
-.cookie-2 {
+.cookie-shop {
     position: absolute;
     background-color: rgb(247, 207, 213);
     width: 200px;
     height: 200px;
     top: 282px;
     right: 553px;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+.necklace-shop {
+    position: absolute;
+    background-color: rgb(181, 242, 230);
+    top: 282px;
+    right: 255px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25%;
+
+}
+
+
+.hoodie-shop {
+    position: absolute;
+    background-color: rgb(181, 242, 230);
+    top: 578px;
+    right: 553px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25%;
+}
+
+
+.trilobite-shop {
+    position: absolute;
+    background-color: rgb(247, 207, 213);
+    top: 580px;
+    right: 257px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     border-radius: 25%;
 }
@@ -408,38 +443,55 @@ font-size: 25px;
     opacity: 0.4;
 }
 
-.necklace-2 {
-    position: absolute;
-    background-color: rgb(181, 242, 230);
-    top: 282px;
-    right: 255px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 25%;
+
+
+#scroll-shop {
+    background-color: rgb(250, 226, 229);
+    grid-area: scroll;
+    font-size: 40px;
+    padding: 50px 0px 50px 0px;
+    margin: 200px 0px 20px 0px;
+}
+
+#scroll-shop-2 {
+    background-color: rgb(250, 226, 229);
+    grid-area: scroll;
+    font-size: 40px;
+    padding: 40px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
 
 }
 
-
-.hoodie-2 {
-    position: absolute;
-    background-color: rgb(181, 242, 230);
-    top: 578px;
-    right: 553px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 25%;
+.artikel-shop {
+    background-color: rgb(250, 226, 229);
+    width: 100%;
+   
 }
 
-
-.trilobite-2 {
-    position: absolute;
-    background-color: rgb(247, 207, 213);
-    top: 580px;
-    right: 257px;
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border-radius: 25%;
+#second-article-shop {
+    display: block;
+    background-color: rgb(250, 226, 229);
+    grid-area: second-article;
+    
 }
 
+#footer-shop {
+    grid-area: footer;
+    background-color: rgb(250, 226, 229);
+}
 
+.lego-shop {
+    width: 100%;
+}
+
+.lego-shop-1 {
+    width: 33%;
+    margin: 0px 0px 100px 0px;
+}
+
+.text-banner {
+    position: absolute;
+    font-size: 200%;
+    right: 10%;
+    Top: 170%;
+}
