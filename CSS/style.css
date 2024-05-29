@@ -297,5 +297,113 @@ margin: 0px 0px 0px 20px;
 font-size: 25px;
 }
 
+.douche {
+    width: 80%;
+    margin: 100px 0px 0px 50px;
+    border-radius: 30px;
+}
+
+.description-1 {
+    position: absolute;
+    grid-area: third-aside;
+    top: 232px;
+    right: 574px;
+    font-size: 50px;
+    background: rgba(248, 180, 190);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    padding: 82px 57px;
+    border-radius: 25%;
+    
+}
+
+.description-2 {
+    position: absolute;
+    grid-area: third-aside;
+    top: 232px;
+    right: 279px;
+    font-size: 50px;
+    padding: 82px 58px;
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    background-color: rgb(86, 241, 210);
+    border-radius: 25%;
+
+}
+
+.description-3 {
+    position: absolute;
+    grid-area: third-aside;
+    top: 530px;
+    right: 574px;
+    font-size: 50px;
+    padding: 80px 73px;
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    background-color: rgb(86, 241, 210);
+    border-radius: 25%;
+}
+
+.description-4 {
+    position: absolute;
+    grid-area: third-aside;
+    top: 530px;
+    right: 277px;
+    font-size: 50px;
+    background: rgba(248, 180, 190);
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    padding: 82px 57px;
+    border-radius: 25%;
+}
+
+.cookie-2 {
+    background-color: rgb(247, 207, 213);
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 60px 10px 60px 10px;;
+    border-radius: 25%;
+}
+
+.img-wrap {
+    display: inline;
+}
+.img-wrap:hover .description-1 {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+.img-wrap-2 {
+    display: inline;
+}
+
+.img-wrap-2:hover .description-2 {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+.img-wrap-3 {
+    display: inline;
+}
+
+
+.img-wrap-3:hover .description-3 {
+    visibility: visible;
+    opacity: 0.4;
+}
+
+.img-wrap-4 {
+    display: inline;
+}
+
+.img-wrap-4:hover .description-4 {
+    visibility: visible;
+    opacity: 0.4;
+}
 
 
