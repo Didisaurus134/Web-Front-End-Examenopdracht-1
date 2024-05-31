@@ -742,24 +742,32 @@ td {
     width: 70%;
 }
 
-@media only screen and (min-width: 420px) {
-    main {
-        section#introduction-shop {
-            display: none;
+@media only screen and (max-width: 800px) {
+    main{
+        header {
+            padding: 0px
         }
-        img.collage {
+
+    section#introduction {
+        width: 40%;
+    }
+   
+
+    article#introduction-shop {
             display: none;
         }
     
-        aside.second-aside {
-            width: fit-content;
-        }
+    
         div.img-wrap {
             position: relative;
-            width: 100px;
-            height: 100px;
-            top: 20px
+       
+           
         }
+        grid-template-columns: 1fr; 
+        grid-template-areas: "header" "first-aside" "third aside" "scroll" "second-aside" "footer" "disclaimer"
         
+    }
 }
-}
+
+
+    
