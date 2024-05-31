@@ -17,8 +17,8 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "header header header header"
-    "first-article first-article third-aside third-aside" "scroll scroll scroll scroll" "second-article second-article second-article second-article" "footer footer footer footer";
-    grid-template-rows: max-content 3fr 0.2fr 6fr max-content;
+    "first-article first-article third-aside third-aside" "scroll scroll scroll scroll" "second-article second-article second-article second-article" "footer footer footer footer""disclaimer disclaimer disclaimer disclaimer";
+    grid-template-rows: max-content 3fr 0.2fr 6fr max-content max-content;
     font-family: myFirstFont;
     font-size: 20px;
     
@@ -118,7 +118,7 @@ a {
     justify-self: center;
     width: 80%;
     height: 30%;
-    margin: 60px 0px 0px 0px;
+    margin: 60px 0px 60px 0px;
    
     
 }
@@ -198,6 +198,19 @@ ul {
     align-self: top;
     border-radius: 30px;
   
+}
+
+.chatbutton {
+    position: fixed;
+    top: 10%;
+    right: 2%;
+
+    
+}
+#chatbutton {
+    width: 5rem;
+
+
 }
 
 #article {
@@ -446,7 +459,17 @@ font-size: 25px;
     opacity: 0.4;
 }
 
-
+#introduction-shop {
+    grid-area: first-article;
+    display: grid;
+    align-self: top;
+    justify-self: center;
+    width: 80%;
+    height: 30%;
+    margin: 60px 0px 60px 0px;
+   
+    
+}
 
 #scroll-shop {
     background-color: rgb(250, 226, 229);
@@ -506,12 +529,6 @@ font-size: 25px;
     width: 100%
 }
 
-/* .baking {
-    margin: 8rem 0rem 4rem 6rem;
-    width: 100%
-
-} */
-
 .image1 {
     display: block;
     width: 100%;
@@ -533,44 +550,33 @@ font-size: 25px;
     grid-area: third-aside;
     display: flex;
     flex-flow: row wrap;
-    width: calc(100%-38px);
-}
-
-.baking-2 {
-    margin: 8rem 6rem 4rem 0rem;
-    width: 100%
-
+    width: 100%;
 }
 
 #gadgets-3 {
     grid-area: second-article;
     display: flex;
     flex-flow: row wrap;  
-    width: calc(100%+38px); 
+    width: 100%; 
 }
 
 .image1-1 {
-    display: inline;
-    width: 20%;
-   padding: 8px;
+    display: block;
+    width: 100%;
+    height: auto;
+   /* padding: 8px; */
     border-radius: 30%;
-    margin: 1.7rem
+    /* margin: 1.7rem */
 }
 
 .summary-1  {
-    display: inline-block;
-    width: 20%;
-   padding: 5px;
-    margin: 1.7rem;
-    text-align: left;
+    display: block;
+    /* padding: 5px; */
+     /* margin: 1.7rem; */
+     text-align: left;
     
 }
 
-.baking-3 {
-    margin: 4rem 4rem 4rem 4rem;
-    width: 100%
-
-}
 
 .border {
     border: solid 1px black;
@@ -669,4 +675,91 @@ fieldset p {
 .radio {
     width: 5rem;
     margin: 0px 0px 15px 0px;
+    background-color: rg;
+}
+
+.disclaimer {
+    grid-area: disclaimer;
+    font-size: 15px;
+    background-color: rgb(181, 242, 230);
+    margin: 0px;
+    padding: 10px;
+}
+
+.disclaimer-shop {
+    grid-area: disclaimer;
+    font-size: 15px;
+    background-color: rgb(250, 226, 229);
+    margin: 0px;
+    padding: 10px;
+}
+
+#footer-categories {
+    grid-area: footer;
+    display: block;
+    background-color: rgb(238, 246, 238);
+}
+
+.disclaimer-categories {
+    grid-area: disclaimer;
+    font-size: 15px;
+    background-color: rgb(238, 246, 238);
+    margin: 0px;
+    padding: 10px;
+}
+
+table.my-table {
+    border: solid 1px black;
+    width: 50%;
+    justify-self: center;
+    background-color: rgb(247, 207, 213);
+    border-radius: 25px;
+    padding: 3px;
+}
+
+td {
+    border: solid 1px black;
+    text-align: center;
+    background-color: rgb(238, 246, 238);
+    border-radius: 25px;
+}
+
+#about-me {
+    font-size: 30px;
+    margin: 50px 100px;
+    
+
+}
+#about-me-text {
+    margin: 50px 100px;
+}
+
+#about-me-div {
+    padding: 20px 50px 0px 50px;
+    border-radius: 30px;
+    border: double 10px rgb(247, 207, 213);
+    margin: 20px auto;
+    width: 70%;
+}
+
+@media only screen and (min-width: 420px) {
+    main {
+        section#introduction-shop {
+            display: none;
+        }
+        img.collage {
+            display: none;
+        }
+    
+        aside.second-aside {
+            width: fit-content;
+        }
+        div.img-wrap {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            top: 20px
+        }
+        
+}
 }
