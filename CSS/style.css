@@ -196,6 +196,59 @@ footer {
     margin-bottom: 15px;
 }
 
+.categories {
+    grid-area: collage;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "categorie-1 categorie-2" "categorie-3 categorie-4";
+}
+
+.categorie-1 {
+    height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    grid-area: categorie-1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorie-2 {
+    height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    grid-area: categorie-2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorie-3 {
+    height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    grid-area: categorie-3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorie-4 {
+    height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 30px;
+    grid-area: categorie-4;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (min-width: 380px) {
     .pic1 {
         grid-area: pic1;
