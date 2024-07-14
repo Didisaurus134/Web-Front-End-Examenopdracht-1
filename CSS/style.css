@@ -57,11 +57,17 @@ a {
     padding: 0px 5px;
 }
 
+.navigation-header:hover {
+    background-color: rgb(114, 243, 215);
+    border-radius: 25px;
+}
+
 .collage {
     grid-area: collage;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "pic1 pic1 pic2 pic3" "pic4 pic5 pic5 pic6" ;
+    background-color: white;
 }
 
 .pic1 {
@@ -88,7 +94,7 @@ a {
     grid-area: pic4;
     height: 110px;
     margin-left: auto;
-   margin-right: auto;
+    margin-right: auto;
 }
 
 .pic5 {
@@ -188,4 +194,47 @@ footer {
     margin-top: 30px;
     margin-left: auto;
     margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 380px) {
+    .pic1 {
+        grid-area: pic1;
+       height: 130px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .pic2 {
+        grid-area: pic2;
+        height: 130px;
+        margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .pic3 {
+        grid-area: pic3;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .pic4 {
+        grid-area: pic4;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .pic5 {
+        grid-area: pic5;
+        height: 130px;
+        margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .pic6 {
+        grid-area: pic6;
+        height: 130px;
+        margin-left: auto;
+       margin-right: auto;
+    }
 }
