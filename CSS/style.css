@@ -8,7 +8,7 @@ body {
     display: grid;
     grid-template-areas: "header" "collage" "main" "footer";
     grid-template-rows: max-content;
-    font-family: myFirstFont;
+    font-family: 'Source Sans 3',sans-serif;
     margin: 0px;
 }
 
@@ -17,6 +17,7 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "logo logo" "navigation-header cart";
     grid-template-rows: max-content;
+    font-family: 'myFirstFont',sans-serif;
 }
 .logo {
     grid-area: logo;
@@ -24,13 +25,11 @@ body {
     padding: 20px 0px 0px 10px;
     margin-left: auto;
     margin-right: auto;
-    
-   
 }
 
 .basket {
     grid-area: cart;
-    width: 50px;
+    height: 35px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -70,45 +69,41 @@ a {
     background-color: white;
 }
 
+.pic1,.pic2,.pic3,.pic4,.pic5,.pic6 {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+
+}
 .pic1 {
     grid-area: pic1;
-   height: 110px;
-   margin-left: auto;
-   margin-right: auto;
+  
 }
 .pic2 {
     grid-area: pic2;
-    height: 110px;
-    margin-left: auto;
-   margin-right: auto;
+   
 }
 
 .pic3 {
     grid-area: pic3;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
+   
 }
 
 .pic4 {
     grid-area: pic4;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .pic5 {
     grid-area: pic5;
-    height: 110px;
-    margin-left: auto;
-   margin-right: auto;
+   
 }
 
 .pic6 {
     grid-area: pic6;
-    height: 110px;
-    margin-left: auto;
-   margin-right: auto;
+ 
 }
 
 main {
@@ -119,15 +114,15 @@ main {
 
 
 p {
-    grid-area: about-me;
     text-align: center;
     width: fit-content;
-    margin: 10px;
+    margin: 20px;
     
 }
 
 h2 {
     text-align: center;
+    font-family: 'myFirstFont',sans-serif;
     padding: 20px;
     margin: 100px 0px 50px 0px;
     border: 1px solid black;
@@ -135,6 +130,10 @@ h2 {
     border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.categorie {
+    display: none;
 }
 
 .table {
@@ -160,10 +159,22 @@ td {
     height: 40px;
 }
 
+.categorie-1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+span {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "contact-information navigation-footer" "copywrite logo-footer";
+    font-family: 'myFirstFont',sans-serif;
 }
 
 .text-footer {
@@ -194,6 +205,7 @@ footer {
     margin-top: 30px;
     margin-left: auto;
     margin-bottom: 15px;
+    margin-right: 10px;
 }
 
 .categories {
@@ -249,45 +261,156 @@ footer {
     margin-right: auto;
 }
 
-@media only screen and (min-width: 380px) {
-    .pic1 {
-        grid-area: pic1;
-       height: 130px;
-       margin-left: auto;
-       margin-right: auto;
-    }
-    .pic2 {
-        grid-area: pic2;
-        height: 130px;
-        margin-left: auto;
-       margin-right: auto;
-    }
+@media only screen and (min-width: 750px) {
+    .header {
+        display: grid;
+        margin: 30px 0px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "logo logo" "navigation-header cart";
+        grid-template-rows: max-content;
+        font-family: 'myFirstFont',sans-serif;
+}
+
+.logo {
+    grid-area: logo;
+    width: 250px;
+    margin: auto;
+    padding: 0px;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.basket {
+    grid-area: cart;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 0px 10px 0px 0px;
     
-    .pic3 {
-        grid-area: pic3;
-        height: 130px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "about-me categorie" "difference difference";
+}
+
+.about-me {
+    grid-area: about-me;
+    margin-top: 150px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'myFirstFont',sans-serif;
+    padding: 20px;
+    margin: 40px 0px 50px 0px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.difference {
+    grid-area: difference;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+p {
+    text-align: center;
+    width: fit-content;
+    margin: 20px 50px 20px 100px;
+}
+
+.categorie {
+    grid-area: categorie;
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas: "categorie-1" "categorie-2" "categorie-3" "categorie-4";
     
-    .pic4 {
-        grid-area: pic4;
-        height: 130px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+}
+
+.cat {
+    height: 150px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorie-1 {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(181, 242, 230);
+   margin: auto;
+    border-radius: 30px;
+    grid-area: categorie-1;
     
-    .pic5 {
-        grid-area: pic5;
-        height: 130px;
-        margin-left: auto;
-       margin-right: auto;
-    }
+}
+
+.categorie-2 {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(181, 242, 230);
+    margin: auto;
+    border-radius: 30px;
+    grid-area: categorie-2;
+}  
+
+.categorie-3 {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(181, 242, 230);
+    margin: auto;
+    border-radius: 30px;
+    grid-area: categorie-3;
     
-    .pic6 {
-        grid-area: pic6;
-        height: 130px;
-        margin-left: auto;
-       margin-right: auto;
-    }
+}
+
+.categorie-4 {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(181, 242, 230);
+    margin: auto;
+    border-radius: 30px;
+    grid-area: categorie-4;
+    
+}
+.text-footer {
+    grid-area: contact-information;
+    text-align: left;
+    font-size: 25px;
+}
+
+.logo-footer {
+    grid-area: logo-footer;
+    width: 200px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.copywrite {
+    grid-area: copywrite;
+    font-size: small;
+    margin: 50px 0px 10px 10px;
+}
+
 }
