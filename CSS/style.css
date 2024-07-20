@@ -56,6 +56,9 @@ a {
     padding: 0px 5px;
 }
 
+.coming-soon {
+    display: none;
+}
 .navigation-header:hover {
     background-color: rgb(114, 243, 215);
     border-radius: 25px;
@@ -109,6 +112,18 @@ a {
 main {
     grid-area: main;
     background-color: white;
+}
+
+.chatbutton {
+    width: 3rem;
+    border-radius: 15px;
+    
+}
+
+.chatbutton-fixed {
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .about-me {
@@ -306,6 +321,18 @@ main {
     grid-template-areas: "about-me categorie" "difference difference";
 }
 
+.chatbutton {
+    width: 4rem;
+    border-radius: 20px;
+    
+}
+
+.chatbutton-fixed {
+    position: fixed;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 .about-me {
     grid-area: about-me;
     margin-top: 150px;
@@ -483,7 +510,26 @@ main {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "categorie categorie" "about-me about-me" "difference difference";
+    grid-template-areas: "categorie categorie" "about-me about-me" "coming-soon coming-soon" "difference difference";
+}
+
+.chatbutton {
+    width: 6rem;
+    border-radius: 25px;
+    
+}
+
+.chatbutton-fixed {
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.coming-soon {
+    display: block;
+    grid-area: coming-soon;
+    width: max-content;
+    height: 100%;
 }
 
 .about-me {
