@@ -6,7 +6,7 @@
 body {
     background-color: rgb(181, 242, 230);
     display: grid;
-    grid-template-areas: "header" "asside" "main" "footer";
+    grid-template-areas: "header" "aside" "main" "footer";
     grid-template-rows: max-content;
     font-family: 'Source Sans 3',sans-serif;
     margin: 0px;
@@ -65,7 +65,7 @@ a {
 }
 
 .collage {
-    grid-area: collage;
+    grid-area: aside;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "pic1 pic1 pic2 pic3" "pic4 pic5 pic5 pic6" ;
@@ -109,8 +109,24 @@ a {
  
 }
 
+h1 {
+    margin-top: 50px;
+}
+
+.intro {
+    grid-area: aside;
+    background-color: white;
+    text-align: center;
+   
+}
+#intro {
+    align-self: center;
+    text-align: center;
+    margin: 50px 50px;
+}
+
 main {
-    grid-area: main;
+    
     background-color: white;
 }
 
@@ -176,11 +192,34 @@ td {
     height: 40px;
 }
 
-.categorie-1 img {
+.categorie-shop-1 img {
     height: 100%;
     width: 100%;
+    border-radius: 25px;
     object-fit: contain;
 }
+
+.categorie-shop-2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-shop-3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-shop-4 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
 span {
     display: block;
     text-align: center;
@@ -226,56 +265,63 @@ footer {
 }
 
 .categories {
-    grid-area: asside;
+    grid-area: main;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "categorie-1 categorie-2" "categorie-3 categorie-4";
+    grid-template-areas: "categorie-1" "categorie-2" "categorie-3" "categorie-4";
 }
 
-.categorie-1 {
-    height: 100px;
+.categorie-shop-1 {
+    height: 250px;
     padding: 30px;
+    background-color: rgb(181, 242, 230);
     border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 50px 0px;
     border-radius: 30px;
     grid-area: categorie-1;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
 }
 
-.categorie-2 {
-    height: 100px;
+.categorie-shop-2 {
+    height: 250px;
     padding: 30px;
+    background-color: rgb(181, 242, 230);
     border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 50px 0px;
     border-radius: 30px;
     grid-area: categorie-2;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
 }
 
-.categorie-3 {
-    height: 100px;
+.categorie-shop-3 {
+    height: 250px;
     padding: 30px;
+    background-color: rgb(181, 242, 230);
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 50px 0px;
     border-radius: 30px;
     grid-area: categorie-3;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
 }
 
-.categorie-4 {
-    height: 100px;
+.categorie-shop-4 {
+    height: 250px;
     padding: 30px;
+    background-color: rgb(181, 242, 230);
     border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 100px;
     border-radius: 30px;
     grid-area: categorie-4;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
 }
 
 .disclaimer {
@@ -322,6 +368,53 @@ a {
 main {
     grid-area: main;
     background-color: white;
+   
+}
+
+.categories {
+    grid-area: main;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "categorie-1 categorie-2" "categorie-3 categorie-4";
+}
+
+.categorie-shop-1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-shop-2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-shop-3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-shop-4 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
+
+.main-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "about-me categorie" "difference difference";
@@ -380,7 +473,6 @@ p {
 .cat {
     height: 150px;
     border-radius: 30px;
-    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
 }
@@ -390,7 +482,7 @@ p {
     padding: 10px;
     border: 1px solid black;
     background-color: rgb(181, 242, 230);
-   margin: auto;
+    margin: 50px auto;
     border-radius: 30px;
     grid-area: categorie-1;
     
@@ -465,7 +557,7 @@ td {
     body {
         background-color: rgb(181, 242, 230);
         display: grid;
-        grid-template-areas: "header" "main" "collage" "footer";
+        grid-template-areas: "header" "main" "footer";
         grid-template-rows: max-content;
         font-family: 'Source Sans 3',sans-serif;
         margin: 0px;
@@ -477,6 +569,86 @@ td {
         grid-template-areas: "logo navigation-header cart";
         grid-template-rows: max-content;
         font-family: 'myFirstFont',sans-serif;
+}
+
+.categories {
+    grid-area: categories;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "cat-shop-1 cat-shop-2" "cat-shop-3 cat-shop-4";
+
+}
+
+.main-shop {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "intro intro" "categories categories" "disclaimer disclaimer";
+}
+
+.intro {
+    grid-area: intro;
+    background-color: white;
+    text-align: center;
+    
+}
+.into p {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categorie-shop-1 {
+    height: 250px;
+    padding: 30px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: cat-shop-1;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-shop-2 {
+    height: 250px;
+    padding: 30px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: cat-shop-2;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-shop-3 {
+    height: 250px;
+    padding: 30px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: cat-shop-3;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-shop-4 {
+    height: 250px;
+    padding: 30px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    grid-area: cat-shop-4;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
 }
 
 
@@ -568,9 +740,13 @@ td {
 main {
     grid-area: main;
     background-color: white;
+   
+}
+
+.main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "about-me categorie" "coming-soon coming-soon" "difference difference";
+    grid-template-areas: "about-me categorie" "coming-soon coming-soon" "difference difference" "collage collage";
 }
 
 .chatbutton {
@@ -586,11 +762,19 @@ main {
 }
 
 .coming-soon {
-    display: block;
+    display: inline-block;
     grid-area: coming-soon;
-    width: max-content;
-    height: 100%;
+    
+    
+    
 }
+ #coming-soon {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+ }
 
 
 .about-me {
@@ -614,6 +798,7 @@ p {
 }
 
 .disclaimer {
+    grid-area: disclaimer;
     font-size: 10px;
     text-align: left;
     margin: 20px;
