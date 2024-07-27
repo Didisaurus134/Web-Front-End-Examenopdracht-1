@@ -669,6 +669,7 @@ td {
 .items{
     grid-area: items;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "item-1 item-2" "item-3 item-4";
     margin-top: 50px;
 }
@@ -1001,6 +1002,86 @@ p {
     margin: 20px;
 }
 
+.items{
+    grid-area: items;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "item-1 item-2 item-3 item-4";
+    margin-top: 50px;
+}
+
+.items-2{
+    grid-area: items-2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "item-1 item-2 item-3 item-4";
+}
+
+.item-1 {
+    grid-area: item-1;
+    width: 200px;
+    margin: 50px 25px;
+}
+
+.item-2 {
+    grid-area: item-2;
+    width: 200px;
+    margin: 50px 25px;
+}
+
+.item-3 {
+    grid-area: item-3;
+    width: 200px;
+    margin: 50px 25px;
+}
+
+.item-4 {
+    grid-area: item-4;
+    width: 200px;
+    margin: 50px 25px;
+}
+
+.summary {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.summary-h2 {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.border-1 {
+    grid-area: item-1;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+}
+ .border-2 {
+    grid-area: item-2;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-3 {
+    grid-area: item-3;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-4 {
+    grid-area: item-4;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
 @media only screen and (min-width: 1400px) {
 
     .header {
@@ -1137,6 +1218,71 @@ p {
     grid-area: cat-shop-4;
     font-family: 'myFirstFont',sans-serif;
 }
+
+.item-1 {
+    grid-area: item-1;
+    width: 250px;
+    margin: 50px 25px;
+}
+
+.item-2 {
+    grid-area: item-2;
+    width: 250px;
+    margin: 50px 25px;
+}
+
+.item-3 {
+    grid-area: item-3;
+    width: 250px;
+    margin: 50px 25px;
+}
+
+.item-4 {
+    grid-area: item-4;
+    width: 250px;
+    margin: 50px 25px;
+}
+
+.summary {
+    width: 220px;
+    margin: 20px auto;
+}
+
+.summary-h2 {
+    width: 220px;
+    margin: 20px auto;
+}
+
+.border-1 {
+    grid-area: item-1;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 100px auto;
+    border-radius: 30px;
+}
+ .border-2 {
+    grid-area: item-2;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-3 {
+    grid-area: item-3;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-4 {
+    grid-area: item-4;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
 
 }
 }
