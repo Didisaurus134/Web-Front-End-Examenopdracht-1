@@ -349,6 +349,91 @@ footer {
     margin: 50px 50px;
 }
 
+.main-clothing {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "items" "items-2";
+}
+.items{
+    grid-area: items;
+    display: grid;
+    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+    margin-top: 50px;
+}
+
+.items-2{
+    grid-area: items-2;
+    display: grid;
+    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+}
+
+.item-1 {
+    grid-area: item-1;
+    width: 600px;
+    margin: 50px;
+}
+
+.item-2 {
+    grid-area: item-2;
+    width: 600px;
+    margin: 50px;
+}
+
+.item-3 {
+    grid-area: item-3;
+    width: 600px;
+    margin: 50px;
+}
+
+.item-4 {
+    grid-area: item-4;
+    width: 600px;
+    margin: 50px;
+}
+
+.summary {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.border-1 {
+    grid-area: item-1;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px 50px;
+    border-radius: 30px;
+}
+ .border-2 {
+    grid-area: item-2;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px 50px;
+    border-radius: 30px;
+ }
+
+ .border-3 {
+    grid-area: item-3;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px 50px;
+    border-radius: 30px;
+ }
+
+ .border-4 {
+    grid-area: item-4;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px 50px;
+    border-radius: 30px;
+ }
+
+.summary-h2 {
+    border: none;
+    background-color: rgb(244, 226, 229);
+}
+
+
+
 
 @media only screen and (min-width: 750px) {
     .header {
@@ -576,7 +661,89 @@ td {
     height: 40px;
 }
 
+.main-clothing {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "items" "items-2";
+}
+.items{
+    grid-area: items;
+    display: grid;
+    grid-template-areas: "item-1 item-2" "item-3 item-4";
+    margin-top: 50px;
+}
 
+.items-2{
+    grid-area: items-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item-1 item-2" "item-3 item-4";
+}
+
+.item-1 {
+    grid-area: item-1;
+    width: 350px;
+    margin: 50px auto;
+}
+
+.item-2 {
+    grid-area: item-2;
+    width: 350px;
+    margin: 50px auto;
+}
+
+.item-3 {
+    grid-area: item-3;
+    width: 350px;
+    margin: 50px auto;
+}
+
+.item-4 {
+    grid-area: item-4;
+    width: 350px;
+    margin: 50px auto;
+}
+
+.summary {
+    width: 250px;
+    margin: 20px auto;
+}
+
+.summary-h2 {
+    width: 200px;
+    margin: 20px auto;
+}
+
+.border-1 {
+    grid-area: item-1;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+}
+ .border-2 {
+    grid-area: item-2;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-3 {
+    grid-area: item-3;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
+
+ .border-4 {
+    grid-area: item-4;
+    border: solid 1px black;
+    padding: 8px;
+    margin: 100px auto;
+    border-radius: 30px;
+ }
 
 }
 
