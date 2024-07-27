@@ -349,7 +349,7 @@ footer {
     margin: 50px 50px;
 }
 
-.main-clothing {
+.main-items {
     grid-area: main;
     display: grid;
     grid-template-areas: "items" "items-2";
@@ -369,25 +369,25 @@ footer {
 
 .item-1 {
     grid-area: item-1;
-    width: 600px;
+    width: 400px;
     margin: 50px;
 }
 
 .item-2 {
     grid-area: item-2;
-    width: 600px;
+    width: 400px;
     margin: 50px;
 }
 
 .item-3 {
     grid-area: item-3;
-    width: 600px;
+    width: 400px;
     margin: 50px;
 }
 
 .item-4 {
     grid-area: item-4;
-    width: 600px;
+    width: 400px;
     margin: 50px;
 }
 
@@ -661,7 +661,7 @@ td {
     height: 40px;
 }
 
-.main-clothing {
+.main-items {
     grid-area: main;
     display: grid;
     grid-template-areas: "items" "items-2";
