@@ -527,7 +527,7 @@ span {
 .main-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-areas: "about-me categorie" "difference difference";
+    grid-template-areas: "about-me categorie" "difference difference" "disclaimer disclaimer";
 }
 
 .chatbutton {
