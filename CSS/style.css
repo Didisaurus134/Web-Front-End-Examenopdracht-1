@@ -352,7 +352,7 @@ footer {
 .main-items {
     grid-area: main;
     display: grid;
-    grid-template-areas: "items" "items-2" "disclaimer";
+    grid-template-areas: "items" "disclaimer";
 }
 .items{
     grid-area: items;
@@ -361,35 +361,8 @@ footer {
     margin-top: 50px;
 }
 
-.items-2{
-    grid-area: items-2;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.item-1 {
+.item {
     grid-area: item-1;
-    width: 400px;
-    margin: 50px;
-    border-radius: 30px;
-}
-
-.item-2 {
-    grid-area: item-2;
-    width: 400px;
-    margin: 50px;
-    border-radius: 30px;
-}
-
-.item-3 {
-    grid-area: item-3;
-    width: 400px;
-    margin: 50px;
-    border-radius: 30px;
-}
-
-.item-4 {
-    grid-area: item-4;
     width: 400px;
     margin: 50px;
     border-radius: 30px;
@@ -400,8 +373,7 @@ footer {
     margin: 20px auto;
 }
 
-.border-1 {
-    grid-area: item-1;
+.border {
     border: solid 1px black;
     padding: 8px;
     margin: 100px 50px;
@@ -818,7 +790,7 @@ td {
 .main-items {
     grid-area: main;
     display: grid;
-    grid-template-areas: "items" "items-2" "disclaimer";
+    grid-template-areas: "items" "disclaimer";
 }
 .items{
     grid-area: items;
@@ -827,35 +799,9 @@ td {
     margin-top: 50px;
 }
 
-.items-2{
-    grid-area: items-2;
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.item-1 {
+.item {
     grid-area: item-1;
-    width: 350px;
-    margin: 50px auto;
-    
-}
-
-.item-2 {
-    grid-area: item-2;
-    width: 350px;
-    margin: 50px auto;
-    
-}
-
-.item-3 {
-    grid-area: item-3;
-    width: 350px;
-    margin: 50px auto;
-   
-}
-
-.item-4 {
-    grid-area: item-4;
     width: 350px;
     margin: 50px auto;
     
@@ -1211,36 +1157,12 @@ p {
     margin-top: 50px;
 }
 
-.items-2{
-    grid-area: items-2;
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.item-1 {
+.item {
     
     width: 200px;
     margin: 50px 25px;
 
-}
-
-.item-2 {
-    
-    width: 200px;
-    margin: 50px 25px;
-    
-}
-
-.item-3 {
-  
-    width: 200px;
-    margin: 50px 25px;
-}
-
-.item-4 {
-    
-    width: 200px;
-    margin: 50px 25px;
 }
 
 .summary {
