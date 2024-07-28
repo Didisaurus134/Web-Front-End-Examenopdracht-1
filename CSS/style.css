@@ -521,6 +521,75 @@ fieldset {
 
 }
 
+.main-news {
+    grid-area: main;
+    grid-template-areas: "first-article" "second-article" "disclaimer";
+}
+
+.article {
+    grid-area: first-article;
+    display: block;
+    background-color: white;
+    border: double 5px black;
+    margin: 50px auto 0px auto;
+    border-radius: 30px;
+    align-content: center;
+    padding: 20px 50px 0px 50px;
+    width: 70%;
+}
+
+.article-title {
+    border: none;
+    margin: 50px auto;
+    padding: 0px;
+
+}
+
+.article-1-textblock {
+    display: inline-block;
+    width: 100%;
+}
+
+.article-1-textblock h2 {
+    border: none;
+    margin: 50px auto;
+    border-radius: 30px;
+    background-color: rgb(244, 226, 229);
+}
+
+.artikel {
+    background-color: rgb(181, 242, 230);
+    width: 100%;
+   
+}
+.article-1-img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.nieuws-afbeelding-1 {
+    width: 35%;
+    padding: 20px;
+    margin:  5px 0px 0px 0px;
+    border-radius: 30px;
+
+
+}
+
+.nieuws-afbeelding-2 {
+    width: 35%;
+    padding: 20px;
+    margin: 70px 0px 0px 0px;
+    border-radius: 30px;
+}
+
+.nieuws-afbeelding-3 {
+    width: 35%;
+    padding: 20px;
+    margin: 70px 0px 0px 0px;
+    border-radius: 30px;
+}
+
 @media only screen and (min-width: 750px) {
     .header {
         display: grid;
