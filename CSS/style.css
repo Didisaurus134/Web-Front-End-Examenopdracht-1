@@ -352,7 +352,7 @@ footer {
 .main-items {
     grid-area: main;
     display: grid;
-    grid-template-areas: "items" "items-2";
+    grid-template-areas: "items" "items-2" "disclaimer";
 }
 .items{
     grid-area: items;
@@ -432,8 +432,94 @@ footer {
     background-color: rgb(244, 226, 229);
 }
 
+.main-contact {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "form" "disclaimer";
+}
 
+#contact {
+    display: block;
+    font-size: 50px;
+    font-family: 'myFirstFont',sans-serif;
+    margin: 20px auto 50px auto;
+}
+.form {
+    display: block;
+    grid-area:  form;
+    padding: 50px;
+    background-color: rgb(244, 226, 229);
+    margin: 200px 50px;
+    border-radius: 30px;
+    border: solid 2px black;
+}
 
+fieldset label {
+    display: block;
+    width: 15rem;
+    font-size: 25px;
+    margin: 15px 5px;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+fieldset input {
+    display: block;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 25px;
+}
+fieldset {
+    border: none;
+}
+
+.radio {
+    display: inline-block;
+    width: 4rem;
+    margin: 30px 0px 15px 0px;
+}
+
+#questions {
+    display: inline-block;
+    background-color: rgb(248, 180, 190);
+    width: 20rem;
+    height: 3rem;
+    font-family: myFirstFont;
+    font-size: 20px;
+    border-radius: 25px;text-align: center;
+    margin: 20px 0px;
+}
+
+#asterix {
+    display: inline-block;
+    margin: 0px;
+}
+
+#answers {
+    width: 25rem;
+    font-family: 'Source Sans 3',sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+.button {
+    font-family: myFirstfont;
+    font-size: 25px;
+    background-color: rgb(181, 242, 230);
+    margin: 10px auto;
+    height: 3rem;
+    width: 15rem;
+    font-weight: bold;
+}
+#required {
+    display: block;
+    margin: 30px 5px;
+    font-family: 'MyFirstFont',sans-serif;
+}
+
+:required {
+    border: 2px solid rgb(243, 76, 187);
+
+}
 
 @media only screen and (min-width: 750px) {
     .header {
@@ -664,7 +750,7 @@ td {
 .main-items {
     grid-area: main;
     display: grid;
-    grid-template-areas: "items" "items-2";
+    grid-template-areas: "items" "items-2" "disclaimer";
 }
 .items{
     grid-area: items;
@@ -746,6 +832,52 @@ td {
     border-radius: 30px;
  }
 
+ fieldset label {
+    display: inline-block;
+    width: 15rem;
+    font-size: 25px;
+    margin: 15px auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+fieldset input {
+    display: inline-block;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 25px;
+    margin: 0px auto;
+}
+
+
+#questions {
+    display: inline-block;
+    background-color: rgb(248, 180, 190);
+    width: 30rem;
+    height: 3rem;
+    font-family: myFirstFont;
+    font-size: 20px;
+    border-radius: 25px;text-align: center;
+    margin: 20px 0px;
+}
+
+
+#answers {
+    width: 35rem;
+    font-family: 'Source Sans 3',sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+.button {
+    display: inline-block;
+    font-family: myFirstfont;
+    font-size: 30px;
+    background-color: rgb(181, 242, 230);
+    margin: 10px;
+    height: 3rem;
+    width: 15rem;
+    font-weight: bold;
+}
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1081,6 +1213,64 @@ p {
     margin: 100px auto;
     border-radius: 30px;
  }
+
+ .form {
+    display: block;
+    grid-area:  form;
+    padding: 40px;
+    width: 878px;
+    background-color: rgb(244, 226, 229);
+    margin: 200px auto;
+    border-radius: 30px;
+    border: solid 2px black;
+}
+
+ fieldset label {
+    display: inline-block;
+    width: 14rem;
+    font-size: 25px;
+    margin: 15px 10px;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+fieldset input {
+    display: inline-block;
+    width: 33rem;
+    height: 2rem;
+    border-radius: 25px;
+    margin: 0px 5px;
+}
+
+
+#questions {
+    display: inline-block;
+    background-color: rgb(248, 180, 190);
+    width: 30rem;
+    height: 3rem;
+    font-family: myFirstFont;
+    font-size: 20px;
+    border-radius: 25px;text-align: center;
+    margin: 20px 10px;
+}
+
+
+#answers {
+    width: 49rem;
+    font-family: 'Source Sans 3',sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+.button {
+    display: inline-block;
+    font-family: myFirstfont;
+    font-size: 30px;
+    background-color: rgb(181, 242, 230);
+    margin: 10px;
+    height: 3rem;
+    width: 15rem;
+    font-weight: bold;
+}
 
 @media only screen and (min-width: 1400px) {
 

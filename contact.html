@@ -23,30 +23,32 @@
     </header>
     <main class="main-contact">
         <div class="chatbutton-fixed"><img class="chatbutton" src="Pictures/logo/Chat-button.jpg" alt="Chatknop"></div>
-    <div class="formulier">
+    <div class="form">
         <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
             <fieldset>
                 <p id="contact">Contact formulier</p>
                 <label for="lastname">Naam*</label>
-                <input id="lastname" name="lastname"type="text"required><br><br>
+                <input id="lastname" name="lastname"type="text"required>
                 <label for="firstname">Voornaam*</label>
-                <input id="firstname" name="firstname"type="text"required><br><br>
+                <input id="firstname" name="firstname"type="text"required>
+                <div>
                 <input class="radio" type="radio" name="Geslacht" id="Man" checked="checked"/>
                 <label class="radio" for="Man">Man</label>
                 <input class="radio" type="radio" name="Geslacht" id="Vrouw"/>
                 <label class="radio" for="Vrouw">Vrouw</label>
                 <input class="radio" type="radio" name="Geslacht" id="X"/>
                 <label class="radio" for="X">X</label>
+            </div>
                 <label for="streetname">Straatnaam + nr</label>
-                <input id="streetname" name="streetname and number"type="text"><br><br>
+                <input id="streetname" name="streetname and number"type="text">
                 <label for="postcode">Postcode</label>
-                <input id="postcode" name="postcode"type="text"><br><br>
+                <input id="postcode" name="postcode"type="text">
                 <label for="city">Woonplaats</label>
-                <input id="city" name="city"type="text"><br><br>
+                <input id="city" name="city"type="text">
                 <label for="telephone">Telefoonnummer</label>
-                <input id="telephone" name="telephone number"type="tel"><br><br>
+                <input id="telephone" name="telephone number"type="tel">
                 <label for="email">E-mail adres*</label>
-                <input id="email" name="e-mail"type="email" required><br><br>
+                <input id="email" name="e-mail"type="email" required><br>
                 <select name="Wat is uw vraag" id="questions" required>
                     <option value="placeOrder">Ik wil een order plaatsen</option>
                     <option value="Article"> Ik heb een vraag over een artikel</option>
@@ -55,7 +57,7 @@
                     <option value="Defect"> Er is schade aan mijn product</option>
                     <option value="order"> Ik heb een vraag over mijn aankoop</option>
                     <option value="other"> Ik heb een andere vraag</option>
-                </select> <p>*</p> <br><br>
+                </select> <p id="asterix">*</p> 
                 <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
                 <input class="button" type="reset" value = "Reset"/>
                 <input class="button" type="submit" value="Verzenden"/>
@@ -63,6 +65,7 @@
             </fieldset>
         </form>
     </div>
+    <p class="disclaimer">Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden</p>
 </main>
 
     <footer>
