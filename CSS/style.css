@@ -64,6 +64,11 @@ a {
     border-radius: 25px;
 }
 
+a:active {
+    background-color: rgb(114, 243, 215);
+    padding: 5px;
+}
+
 main {
     grid-area: main;
     display: grid;
@@ -1326,6 +1331,7 @@ fieldset input {
     float: left;
     margin: 40px 10px;
 }
+}
 
 @media only screen and (min-width: 1400px) {
 
@@ -1528,6 +1534,73 @@ fieldset input {
     margin: 100px auto;
     border-radius: 30px;
  }
-
 }
+
+    
+ 
+ @media only screen and (min-width: 1750px) {
+    
+    .article {
+        display: block;
+        background-color: white;
+        border: double 5px black;
+        margin: 50px auto;
+        border-radius: 30px;
+        align-content: center;
+        padding: 20px 50px 0px 50px;
+        width: 50%;
+    }
+    
+    .article-title {
+        border: none;
+        margin: 50px auto;
+        padding: 0px;
+        font-size: 40px;
+    
+    }
+    
+    .article-1-textblock {
+        display: inline-block;
+        width: 45%;
+        margin: 20px;
+    }
+    
+    .article-subtitle {
+        border: none;
+        margin: 50px auto;
+        border-radius: 30px;
+        background-color: rgb(244, 226, 229);
+    }
+    .article-1-textblock p {
+        margin: 20px;
+    }
+    
+    .artikel {
+        background-color: rgb(181, 242, 230);
+        width: 100%;
+       
+    }
+    .article-1-img {
+        display: inline-block;
+        width: 35%;
+        border-radius: 30px;
+    
+    }
+    
+    #img-1 {
+        float: left;
+        margin: 40px 10px;
+    }
+    
+    #img-2 { 
+        float: right;
+        margin: 40px 0px;
+    }
+    
+    #img-3 {
+        float: left;
+        margin: 40px 10px;
+    }
+ }
+
 }
