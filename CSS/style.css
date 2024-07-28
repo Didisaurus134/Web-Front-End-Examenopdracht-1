@@ -533,6 +533,7 @@ fieldset {
 
 .article-2 {
     grid-area: second-article;
+    margin: 50px auto;
 }
 
 .article {
