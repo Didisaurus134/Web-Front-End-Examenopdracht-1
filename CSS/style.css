@@ -356,39 +356,43 @@ footer {
 }
 .items{
     grid-area: items;
-    display: grid;
-    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 50px;
 }
 
 .items-2{
     grid-area: items-2;
-    display: grid;
-    grid-template-areas: "item-1" "item-2" "item-3" "item-4";
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .item-1 {
     grid-area: item-1;
     width: 400px;
     margin: 50px;
+    border-radius: 30px;
 }
 
 .item-2 {
     grid-area: item-2;
     width: 400px;
     margin: 50px;
+    border-radius: 30px;
 }
 
 .item-3 {
     grid-area: item-3;
     width: 400px;
     margin: 50px;
+    border-radius: 30px;
 }
 
 .item-4 {
     grid-area: item-4;
     width: 400px;
     margin: 50px;
+    border-radius: 30px;
 }
 
 .summary {
@@ -818,41 +822,43 @@ td {
 }
 .items{
     grid-area: items;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item-1 item-2" "item-3 item-4";
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 50px;
 }
 
 .items-2{
     grid-area: items-2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item-1 item-2" "item-3 item-4";
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .item-1 {
     grid-area: item-1;
     width: 350px;
     margin: 50px auto;
+    
 }
 
 .item-2 {
     grid-area: item-2;
     width: 350px;
     margin: 50px auto;
+    
 }
 
 .item-3 {
     grid-area: item-3;
     width: 350px;
     margin: 50px auto;
+   
 }
 
 .item-4 {
     grid-area: item-4;
     width: 350px;
     margin: 50px auto;
+    
 }
 
 .summary {
@@ -1200,39 +1206,39 @@ p {
 
 .items{
     grid-area: items;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "item-1 item-2 item-3 item-4";
+    display: flex;
+    flex-flow: row wrap;
     margin-top: 50px;
 }
 
 .items-2{
     grid-area: items-2;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "item-1 item-2 item-3 item-4";
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .item-1 {
-    grid-area: item-1;
+    
     width: 200px;
     margin: 50px 25px;
+
 }
 
 .item-2 {
-    grid-area: item-2;
+    
     width: 200px;
     margin: 50px 25px;
+    
 }
 
 .item-3 {
-    grid-area: item-3;
+  
     width: 200px;
     margin: 50px 25px;
 }
 
 .item-4 {
-    grid-area: item-4;
+    
     width: 200px;
     margin: 50px 25px;
 }
