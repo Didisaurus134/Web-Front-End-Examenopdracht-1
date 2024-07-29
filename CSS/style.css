@@ -362,51 +362,36 @@ footer {
 .items{
     grid-area: items;
     display: flex;
-    flex-flow: row wrap;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 70px;
 }
 
 .item {
     grid-area: item-1;
     width: 400px;
-    margin: 50px;
+    margin: 75px 50px;
     border-radius: 30px;
 }
 
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .summary {
     width: 500px;
     margin: 20px auto;
 }
 
 .border {
+    position: relative;
     border: solid 1px black;
+    height: 850px;
     padding: 8px;
     margin: 100px 50px;
     border-radius: 30px;
 }
- .border-2 {
-    grid-area: item-2;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px 50px;
-    border-radius: 30px;
- }
-
- .border-3 {
-    grid-area: item-3;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px 50px;
-    border-radius: 30px;
- }
-
- .border-4 {
-    grid-area: item-4;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px 50px;
-    border-radius: 30px;
- }
 
 .summary-h2 {
     border: none;
@@ -801,14 +786,12 @@ td {
     grid-area: items;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 50px;
+    margin: 70px;
 }
 
 
 .item {
-    grid-area: item-1;
     width: 350px;
-    margin: 50px auto;
     
 }
 
@@ -822,36 +805,14 @@ td {
     margin: 20px auto;
 }
 
-.border-1 {
-    grid-area: item-1;
+.border {
     border: solid 1px black;
     padding: 8px;
+    height: 800px;
     margin: 100px auto;
     border-radius: 30px;
 }
- .border-2 {
-    grid-area: item-2;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
 
- .border-3 {
-    grid-area: item-3;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
-
- .border-4 {
-    grid-area: item-4;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
 
  fieldset label {
     display: inline-block;
@@ -1116,7 +1077,7 @@ main {
 }
 
 .chatbutton {
-    width: 6rem;
+    width: 4rem;
     border-radius: 25px;
     
 }
@@ -1159,7 +1120,8 @@ p {
     grid-area: items;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 50px;
+    margin: 70px;
+    
 }
 
 
@@ -1180,36 +1142,14 @@ p {
     margin: 20px auto;
 }
 
-.border-1 {
-    grid-area: item-1;
+.border {
     border: solid 1px black;
     padding: 8px;
+    height: 650px;
     margin: 100px auto;
     border-radius: 30px;
 }
- .border-2 {
-    grid-area: item-2;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
 
- .border-3 {
-    grid-area: item-3;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
-
- .border-4 {
-    grid-area: item-4;
-    border: solid 1px black;
-    padding: 8px;
-    margin: 100px auto;
-    border-radius: 30px;
- }
 
  .form {
     display: block;
