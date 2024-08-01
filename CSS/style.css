@@ -77,7 +77,7 @@ a:active {
 .main-home {
     grid-area: main;
     display: grid;
-    grid-template-areas: "aside" "about-me" "difference" "spotlight" "bestseller" "disclaimer" ;
+    grid-template-areas: "aside" "about-me" "categories-home" "difference" "spotlight" "bestseller" "disclaimer" ;
 }
 
 .collage {
@@ -175,8 +175,94 @@ h2 {
 }
 
 .categorie {
-    display: none;
+    grid-area: categories-home;
+    background-color: white;
+    margin: 150px 20px 50px;
+    display: grid;
+    grid-template-areas: "categorie-home-1 categorie-home-2" "categorie-home-3 categorie-home-4";
 }
+
+.categorie-1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-3 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-4 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+}
+
+.categorie-1 {
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: categorie-home-1;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-2 {
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: categorie-home-2;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-3 {
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin: 50px 0px;
+    border-radius: 30px;
+    grid-area: categorie-home-3;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
+.categorie-4 {
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(181, 242, 230);
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    grid-area: categorie-home-4;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'myFirstFont',sans-serif;
+}
+
 
 .table {
     text-align: center;
@@ -221,10 +307,7 @@ td {
 }
 
 .bestsellers {
-    grid-area: bestseller;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    grid-area: bestseller;   
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(228, 228, 227, 0.482);
@@ -235,6 +318,12 @@ td {
     height: 90px;
     border-radius: 50px;
     border: solid 2px rgb(244, 226, 229);
+}
+
+.bestseller-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .categorie-shop-1 img {
     height: 100%;
@@ -592,6 +681,15 @@ fieldset {
 
 .source {
     font-size: 10px;
+}
+
+@media only screen and (min-width: 500px){
+    .bestseller-item {
+        margin: 10px;
+        height: 140px;
+        border-radius: 90px;
+        border: solid 2px rgb(244, 226, 229);
+    }
 }
 
 
