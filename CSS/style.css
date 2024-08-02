@@ -841,6 +841,21 @@ h2 {
     background-color: white;
 }
 
+.bestseller-item {
+    margin: 10px;
+    height: 210px;
+    border-radius: 110px;
+    border: solid 2px rgb(244, 226, 229);
+}
+
+.spotlight-img {
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
 p {
     text-align: justify;
     width: fit-content;
@@ -849,10 +864,10 @@ p {
 
 .categorie {
     grid-area: categorie;
-    margin-top: 140px;
+    height: 1055px;
+    margin-top: 150px;
     display: grid;
-    grid-template-areas: "categorie-1" "categorie-2" "categorie-3" "categorie-4";
-    
+    grid-template-areas: "categorie-1" "categorie-2" "categorie-3" "categorie-4"; 
 }
 
 .cat {
@@ -1025,6 +1040,29 @@ fieldset input {
 }
 }
 
+@media only screen and (min-width: 900px) {
+
+    .categorie {
+        grid-area: categorie;
+        height: 900px;
+        margin-top: 150px;
+        display: grid;
+        grid-template-areas: "categorie-1" "categorie-2" "categorie-3" "categorie-4"; 
+    }
+    
+    .bestseller-item {
+        margin: 30px;
+        height: 215px;
+        border-radius: 110px;
+        border: solid 2px rgb(244, 226, 229);
+    }
+
+    .about-me {
+        grid-area: about-me;
+        margin: 150px 40px 0px;
+    }
+    
+}
 @media only screen and (min-width: 1100px) {
     body {
         background-color: rgb(181, 242, 230);
