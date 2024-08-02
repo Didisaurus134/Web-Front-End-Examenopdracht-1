@@ -1552,10 +1552,39 @@ fieldset input {
         grid-template-rows: max-content;
         font-family: 'myFirstFont',sans-serif;
 }
+
+.main-home {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "about-me categorie" "bestseller bestseller" "spotlight difference" "disclaimer disclaimer" "collage collage";
+}
+
+.table {
+    height: 350px;
+    background-color: white;
+}
+
+.spotlight-fossils {
+    background-color: white;
+}
+
+.difference {
+    background-color: white;
+}
+
+.bestseller-items {
+    padding-bottom: 100px;
+}
+
+.disclaimer-home {
+    background-color: white;
+}
+
 .categorie {
     grid-area: categorie;
     margin: 250px auto;
     width: 90%;
+    height: 800px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "categorie-1 categorie-2" "categorie-3 categorie-4";
@@ -1572,6 +1601,7 @@ fieldset input {
 
 .categorie-1 {
     height: 200px;
+    width: 200px;
     padding: 10px;
     border: 1px solid black;
     background-color: rgb(181, 242, 230);
@@ -1583,6 +1613,7 @@ fieldset input {
 
 .categorie-2 {
     height: 200px;
+    width: 200px;
     padding: 10px;
     border: 1px solid black;
     background-color: rgb(181, 242, 230);
@@ -1593,6 +1624,7 @@ fieldset input {
 
 .categorie-3 {
     height: 200px;
+    width: 200px;
     padding: 10px;
     border: 1px solid black;
     background-color: rgb(181, 242, 230);
@@ -1604,6 +1636,7 @@ fieldset input {
 
 .categorie-4 {
     height: 200px;
+    width: 200px;
     padding: 10px;
     border: 1px solid black;
     background-color: rgb(181, 242, 230);
