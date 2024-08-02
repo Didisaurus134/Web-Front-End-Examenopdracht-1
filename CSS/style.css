@@ -692,6 +692,18 @@ fieldset {
     }
 }
 
+@media only screen and (min-width: 650px) {
+    .bestseller-item {
+        margin: 20px;
+        height: 145px;
+        border-radius: 90px;
+        border: solid 2px rgb(244, 226, 229);
+    }
+
+    .categorie {
+        margin: 150px 50px 50px;
+    }
+}
 
 @media only screen and (min-width: 750px) {
     .header {
