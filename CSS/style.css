@@ -1207,6 +1207,7 @@ fieldset input {
 .categorie {
     grid-area: categorie;
     margin: 150px auto;
+    height: 600px;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1265,16 +1266,49 @@ fieldset input {
     
 }
 
+.categorie-1:hover {
+    background-color: rgb(114, 243, 215);
+    
+}
+
+.categorie-2:hover {
+    background-color: rgb(114, 243, 215);
+}  
+
+.categorie-3:hover {
+    background-color: rgb(114, 243, 215);
+   
+    
+}
+
+.categorie-4:hover {
+    background-color: rgb(114, 243, 215);
+    
+}
+
+.bestsellers {
+    grid-area: bestseller;  
+    width: 100%; 
+    background-color: rgba(228, 228, 227, 0.482);
+}
+
+.table {
+    background-color: rgba(228, 228, 227, 0.482);
+    padding: 0px;
+    height: 275px;
+   
+}
+
 main {
     grid-area: main;
     background-color: white;
    
 }
 
-.main-grid {
+.main-home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "about-me categorie" "bestseller bestseller" "difference spotlight" "disclaimer disclaimer" "collage collage";
+    grid-template-areas: "about-me categorie" "bestseller bestseller" "spotlight spotlight" "difference difference" "disclaimer disclaimer" "collage collage";
 }
 
 .chatbutton {
@@ -1313,7 +1347,7 @@ p {
 .bestseller-item {
     margin: 10px;
     height: 150px;
-    border-radius: 30px;
+    border-radius: 100px;
     border: solid 1px rgb(244, 226, 229);
 }
 
@@ -1321,6 +1355,7 @@ p {
     grid-area: difference;
     padding-top: 150px;
     padding-bottom: 150px;
+    background-color: rgba(228, 228, 227, 0.482);
 }
 
 .spotlight-fossils {
@@ -1331,7 +1366,7 @@ p {
 }
 
 .spotlight-img {
-    width: 50%;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
