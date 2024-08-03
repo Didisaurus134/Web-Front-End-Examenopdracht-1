@@ -449,8 +449,8 @@ footer {
 }
 
 .categorie-shop-1 {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -463,8 +463,8 @@ footer {
 }
 
 .categorie-shop-2 {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -477,8 +477,8 @@ footer {
 }
 
 .categorie-shop-3 {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -491,8 +491,8 @@ footer {
 }
 
 .categorie-shop-4 {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -522,10 +522,11 @@ footer {
     text-align: center;
    
 }
+
 #intro {
     align-self: center;
     text-align: center;
-    margin: 50px 50px;
+    margin: 50px 20px;
 }
 
 .main-items {
@@ -554,14 +555,14 @@ footer {
     right: 0;
 }
 .summary {
-    width: 500px;
+    width: 400px;
     margin: 20px auto;
 }
 
 .border {
     position: relative;
     border: solid 1px black;
-    height: 850px;
+    height: 900px;
     padding: 8px;
     margin: 100px 50px;
     border-radius: 30px;
@@ -1006,18 +1007,19 @@ td {
     grid-area: items;
     display: flex;
     flex-flow: row wrap;
-    margin: 70px;
+    justify-content: space-evenly;
+    margin: 40px;
 }
 
 
 .item {
-    width: 350px;
+    width: 175px;
     
 }
 
 .summary {
     width: 250px;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .summary-h2 {
@@ -1028,7 +1030,7 @@ td {
 .border {
     border: solid 1px black;
     padding: 8px;
-    height: 800px;
+    height: 660px;
     margin: 100px auto;
     border-radius: 30px;
 }
@@ -1103,8 +1105,23 @@ fieldset input {
         grid-area: about-me;
         margin: 150px 40px 0px;
     }
+
+    #intro {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .item {
+         width: 250px;
+    }
+    .border {
+        height: 750px;
+    }
     
 }
+    
+
 @media only screen and (min-width: 1100px) {
     body {
         background-color: rgb(181, 242, 230);
@@ -1130,8 +1147,8 @@ fieldset input {
 .categories {
     grid-area: categories;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "cat-shop-1 cat-shop-2" "cat-shop-3 cat-shop-4";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "cat-shop-1 cat-shop-2 cat-shop-3 cat-shop-4";
 
 }
 
@@ -1156,7 +1173,8 @@ fieldset input {
 }
 
 .categorie-shop-1 {
-    height: 250px;
+    height: 150px;
+    width: 150px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -1169,7 +1187,8 @@ fieldset input {
 }
 
 .categorie-shop-2 {
-    height: 250px;
+    height: 150px;
+    width: 150px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -1182,7 +1201,8 @@ fieldset input {
 }
 
 .categorie-shop-3 {
-    height: 250px;
+    height: 150px;
+    width: 150px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -1195,7 +1215,8 @@ fieldset input {
 }
 
 .categorie-shop-4 {
-    height: 250px;
+    height: 150px;
+    width: 150px;
     padding: 30px;
     background-color: rgb(181, 242, 230);
     border: 1px solid black;
@@ -1760,7 +1781,7 @@ fieldset input {
 
 .item {
     
-    width: 250px;
+    width: 200px;
     margin: 50px 25px;
 }
 
@@ -1783,6 +1804,19 @@ fieldset input {
 }
 }
 
+@media only screen and (min-width: 1500px) {
+    .item {
+        width: 250px;
+    }
+
+    .border {
+        height: 750px;
+    }
+
+    .summary {
+        margin-top: 50px;
+    }
+}
     
  
  @media only screen and (min-width: 1750px) {
@@ -1848,6 +1882,42 @@ fieldset input {
         float: left;
         margin: 40px 10px;
     }
+    .item {
+        width: 300px;
+    }
+
+    .border {
+        height: 750px;
+    }
  }
 
-}
+ @media only screen and (min-width: 1950px) {
+    .item {
+        width: 350px;
+    }
+
+    .items {
+        margin: 50px;
+    }
+
+    .border {
+        height: 880px;
+    }
+
+    .summary {
+        margin-top: 50px;
+        width: 300px;
+    }
+ }
+
+ @media only screen and (min-width: 2150px) {
+    .item {
+        width: 420px;
+    }
+
+    .summary {
+        width: 350px;
+    }
+ }
+
+
