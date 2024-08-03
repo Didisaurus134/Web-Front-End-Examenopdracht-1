@@ -52,15 +52,48 @@ a {
 .navigation-header {
     display: inline-block;
     margin-left: auto;
-    padding: 0px 5px;
+    margin: 0px 5px;
+}
+
+.navigation-shop {
+    display: inline-block;
+    margin-left: auto;
+    padding: 0px;
 }
 
 .coming-soon {
     display: none;
 }
-.navigation-header:hover {
+
+a:hover {
+    padding: 0px 7px;
     background-color: rgb(114, 243, 215);
     border-radius: 25px;
+}
+
+details {
+    display: block;
+    padding: 0px;
+}
+
+details > summary {
+    cursor: pointer;
+    border: none;
+    
+}
+
+.nav-shops {
+    list-style-type: none;
+    background-color: rgb(181, 242, 230);
+}
+
+.nav-shops a:hover {
+    background-color: rgb(114, 243, 215);
+    border-radius: 25px;
+}
+
+details[open] summary {
+    background-color: rgb(181, 242, 230);
 }
 
 a:active {
