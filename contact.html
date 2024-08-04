@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="CSS/style.css">
-    
+
 </head>
+
 <body>
 
     <header class="header">
@@ -19,12 +21,12 @@
                         <li class="navigation-shop"><a href="shop.html">Shop</a></li>
                     </summary>
                     <ul class="nav-shops">
-                    <li><a href="clothing.html">Kledij</a></li>
-                    <li><a href="fossils.html">Fossielen</a></li>
-                    <li><a href="gadgets.html">Gadgets</a></li>
-                    <li><a href="jewelry.html">Juwelen</a></li>
+                        <li><a href="clothing.html">Kledij</a></li>
+                        <li><a href="fossils.html">Fossielen</a></li>
+                        <li><a href="gadgets.html">Gadgets</a></li>
+                        <li><a href="jewelry.html">Juwelen</a></li>
                     </ul>
-                </div>
+                    </div>
                 </details>
                 <li class="navigation-header"><a href="news.html">Nieuws</a></li>
                 <li class="navigation-header"><a href="contact.html">Contact</a></li>
@@ -35,50 +37,52 @@
     </header>
     <main class="main-contact">
         <div class="chatbutton-fixed"><img class="chatbutton" src="Pictures/logo/Chat-button.jpg" alt="Chatknop"></div>
-    <div class="form">
-        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
-            <fieldset>
-                <p id="contact">Contact formulier</p>
-                <label for="lastname">Naam*</label>
-                <input id="lastname" name="lastname"type="text"required>
-                <label for="firstname">Voornaam*</label>
-                <input id="firstname" name="firstname"type="text"required>
-                <div>
-                <input class="radio" type="radio" name="Geslacht" id="Man" checked="checked"/>
-                <label class="radio" for="Man">Man</label>
-                <input class="radio" type="radio" name="Geslacht" id="Vrouw"/>
-                <label class="radio" for="Vrouw">Vrouw</label>
-                <input class="radio" type="radio" name="Geslacht" id="X"/>
-                <label class="radio" for="X">X</label>
-            </div>
-                <label for="streetname">Straatnaam + nr</label>
-                <input id="streetname" name="streetname and number"type="text">
-                <label for="postcode">Postcode</label>
-                <input id="postcode" name="postcode"type="text">
-                <label for="city">Woonplaats</label>
-                <input id="city" name="city"type="text">
-                <label for="telephone">Telefoonnummer</label>
-                <input id="telephone" name="telephone number"type="tel">
-                <label for="email">E-mail adres*</label>
-                <input id="email" name="e-mail" type="email" required><br>
-                <select name="Wat is uw vraag" id="questions" required>
-                    <option value="placeOrder">Ik wil een order plaatsen</option>
-                    <option value="Article"> Ik heb een vraag over een artikel</option>
-                    <option value="delivery"> Ik heb een vraag over de levertijd</option>
-                    <option value="invoice"> Ik heb een vraag i.v.m. facturatie</option>
-                    <option value="Defect"> Er is schade aan mijn product</option>
-                    <option value="order"> Ik heb een vraag over mijn aankoop</option>
-                    <option value="other"> Ik heb een andere vraag</option>
-                </select> <p id="asterix">*</p> 
-                <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
-                <input class="button" type="reset" value = "Reset"/>
-                <input class="button" type="submit" value="Verzenden"/>
-                <p id="required">*Deze velden zijn verplicht</p>
-            </fieldset>
-        </form>
-    </div>
-    <p class="disclaimer">Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden</p>
-</main>
+        <div class="form">
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <fieldset>
+                    <p id="contact">Contact formulier</p>
+                    <label class="lastname" for="lastname">Naam*</label>
+                    <input id="lastname" name="lastname" type="text" required>
+                    <label class="firstname" for="firstname">Voornaam*</label>
+                    <input id="firstname" name="firstname" type="text" required>
+                    <div class="radio-buttons">
+                        <input class="radio-man" type="radio" name="Geslacht" id="Man" checked="checked" />
+                        <label class="label-man" for="Man">Man</label>
+                        <input class="radio-woman" type="radio" name="Geslacht" id="Vrouw" />
+                        <label class="label-woman" for="Vrouw">Vrouw</label>
+                        <input class="radio-x" type="radio" name="Geslacht" id="X" />
+                        <label class="label-x" for="X">X</label>
+                    </div>
+                    <label class="streetname" for="streetname">Straatnaam + nr</label>
+                    <input id="streetname" name="streetname and number" type="text">
+                    <label class="postcode" for="postcode">Postcode</label>
+                    <input id="postcode" name="postcode" type="text">
+                    <label class="city" for="city">Woonplaats</label>
+                    <input id="city" name="city" type="text">
+                    <label class="telephone" for="telephone">Telefoonnummer</label>
+                    <input id="telephone" name="telephone number" type="tel">
+                    <label class="email" for="email">E-mail adres*</label>
+                    <input id="email" name="e-mail" type="email" required><br>
+                    <select name="Wat is uw vraag" id="questions" required>
+                        <option value="placeOrder">Ik wil een order plaatsen</option>
+                        <option value="Article"> Ik heb een vraag over een artikel</option>
+                        <option value="delivery"> Ik heb een vraag over de levertijd</option>
+                        <option value="invoice"> Ik heb een vraag i.v.m. facturatie</option>
+                        <option value="Defect"> Er is schade aan mijn product</option>
+                        <option value="order"> Ik heb een vraag over mijn aankoop</option>
+                        <option value="other"> Ik heb een andere vraag</option>
+                    </select>
+                    <p id="asterix">*</p>
+                    <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
+                    <input class="button" type="reset" value="Reset" />
+                    <input class="button" type="submit" value="Verzenden" />
+                    <p id="required">*Deze velden zijn verplicht</p>
+                </fieldset>
+            </form>
+        </div>
+        <p class="disclaimer">Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn
+            fictief en hebben louter educatieve doeleinden</p>
+    </main>
 
     <footer>
         <p class="text-footer">
@@ -88,15 +92,17 @@
             contact@treasure-rex.be
         </p>
         <nav>
-        <ul class="nav-footer">
-            <li class="navigation-footer"><a href="index.html">Home</a></li>
-            <li class="navigation-footer"><a href="shop.html">Shop</a></li>
-            <li class="navigation-footer"><a href="news.html">Nieuws</a></li>
-            <li class="navigation-footer"><a href="contact.html">Contact</a></li></ul>
-    </nav>
-    <p class="copywrite">  &copy; Oomens Didi - WFB@Home - Howest </p>
-    <img class="logo-footer" src="Pictures/logo/logo-treasure-rex.jpg" alt="logo treasure-rex">
+            <ul class="nav-footer">
+                <li class="navigation-footer"><a href="index.html">Home</a></li>
+                <li class="navigation-footer"><a href="shop.html">Shop</a></li>
+                <li class="navigation-footer"><a href="news.html">Nieuws</a></li>
+                <li class="navigation-footer"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copywrite"> &copy; Oomens Didi - WFB@Home - Howest </p>
+        <img class="logo-footer" src="Pictures/logo/logo-treasure-rex.jpg" alt="logo treasure-rex">
     </footer>
 
 </body>
+
 </html>
