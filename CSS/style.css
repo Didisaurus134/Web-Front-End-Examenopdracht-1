@@ -66,7 +66,13 @@ a {
     display: none;
 }
 
-a:hover {
+.header a:hover {
+    padding: 0px 7px;
+    background-color: rgb(114, 243, 215);
+    border-radius: 25px;
+}
+
+.nav-footer a:hover {
     padding: 0px 7px;
     background-color: rgb(114, 243, 215);
     border-radius: 25px;
@@ -348,14 +354,21 @@ td {
 
 }
 
-.spotlight-img {
+.spotlight-a {
     display: block;
+
+}
+
+.spotlight-img {
     width: 250px;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
     margin-bottom: 50px;
 }
+
+
 
 .bestsellers {
     grid-area: bestseller;
@@ -1594,18 +1607,30 @@ fieldset {
 
     .categorie-shop-1:hover {
         background-color: rgb(114, 243, 215);
+        padding: 30px;
+        height: 150px;
+        width: 150px;
     }
 
     .categorie-shop-2:hover {
         background-color: rgb(114, 243, 215);
+        padding: 30px;
+        height: 150px;
+        width: 150px;
     }
 
     .categorie-shop-3:hover {
         background-color: rgb(114, 243, 215);
+        padding: 30px;
+        height: 150px;
+        width: 150px;
     }
 
     .categorie-shop-4:hover {
         background-color: rgb(114, 243, 215);
+        padding: 30px;
+        height: 150px;
+        width: 150px;
     }
 
     .nav-header {
@@ -1642,6 +1667,7 @@ fieldset {
 
     .cat {
         height: 150px;
+        width: 150px;
         border-radius: 30px;
         border: 1px solid black;
         margin-left: auto;
@@ -1651,6 +1677,7 @@ fieldset {
 
     .categorie-1 {
         height: 150px;
+        width: 150px;
         padding: 10px;
         border: 1px solid black;
         background-color: rgb(181, 242, 230);
@@ -1662,6 +1689,7 @@ fieldset {
 
     .categorie-2 {
         height: 150px;
+        width: 150px;
         padding: 10px;
         border: 1px solid black;
         background-color: rgb(181, 242, 230);
@@ -1672,6 +1700,7 @@ fieldset {
 
     .categorie-3 {
         height: 150px;
+        width: 150px;
         padding: 10px;
         border: 1px solid black;
         background-color: rgb(181, 242, 230);
@@ -1683,6 +1712,7 @@ fieldset {
 
     .categorie-4 {
         height: 150px;
+        width: 150px;
         padding: 10px;
         border: 1px solid black;
         background-color: rgb(181, 242, 230);
@@ -1694,21 +1724,33 @@ fieldset {
 
     .categorie-1:hover {
         background-color: rgb(114, 243, 215);
+        height: 150px;
+        width: 150px;
+        padding: 10px;
 
     }
 
     .categorie-2:hover {
         background-color: rgb(114, 243, 215);
+        height: 150px;
+        width: 150px;
+        padding: 10px;
     }
 
     .categorie-3:hover {
         background-color: rgb(114, 243, 215);
+        height: 150px;
+        width: 150px;
+        padding: 10px;
 
 
     }
 
     .categorie-4:hover {
         background-color: rgb(114, 243, 215);
+        height: 150px;
+        width: 150px;
+        padding: 10px;
 
     }
 
@@ -1797,9 +1839,16 @@ fieldset {
 
     .spotlight-img {
         width: 350px;
+        height: 350px;
+        padding: 15px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 30px;
+    }
+
+    .spotlight-img:hover {
+        background-color: rgba(114, 243, 215, 0.457);
+       
     }
 
     .disclaimer {
