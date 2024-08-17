@@ -26,7 +26,6 @@
                         <li><a href="gadgets.html">Gadgets</a></li>
                         <li><a href="jewelry.html">Juwelen</a></li>
                     </ul>
-                    </div>
                 </details>
                 <li class="navigation-header"><a href="news.html">Nieuws</a></li>
                 <li class="navigation-header"><a href="contact.html">Contact</a></li>
@@ -52,16 +51,16 @@
                             </div>
                         </div>
                         <div class="radio-buttons">
-                            <input class="radio-man" type="radio" name="Geslacht" id="Man" checked="checked" />
+                            <input class="radio-man" type="radio" name="Geslacht" id="Man" checked="checked"/>
                             <label class="label-man" for="Man">Man</label>
-                            <input class="radio-woman" type="radio" name="Geslacht" id="Vrouw" />
+                            <input class="radio-woman" type="radio" name="Geslacht" id="Vrouw"/>
                             <label class="label-woman" for="Vrouw">Vrouw</label>
-                            <input class="radio-x" type="radio" name="Geslacht" id="X" />
+                            <input class="radio-x" type="radio" name="Geslacht" id="X"/>
                             <label class="label-x" for="X">X</label>
                         </div>
                         <div class="contact-info">
                             <div class="streetname">
-                                <label class="streetname-1" for="streetname">Straatnaam + nr</label>
+                                <label id="streetname" class="streetname-1" for="streetname">Straatnaam + nr</label>
                                 <input class="streetname-1" name="streetname and number" type="text">
                             </div>
                             <div class="postcode">
@@ -82,20 +81,20 @@
                             </div>
                         </div>
                         <div class="questions">
-                            <select name="Wat is uw vraag" id="questions" required>
-                                <option value="placeOrder">Ik wil een order plaatsen</option>
+                            <select name="Wat is uw vraag" id="questions" size="7" required>
+                                <option value="PlaceOrder">Ik wil een order plaatsen</option>
                                 <option value="Article"> Ik heb een vraag over een artikel</option>
-                                <option value="delivery"> Ik heb een vraag over de levertijd</option>
-                                <option value="invoice"> Ik heb een vraag i.v.m. facturatie</option>
+                                <option value="Delivery"> Ik heb een vraag over de levertijd</option>
+                                <option value="Invoice"> Ik heb een vraag i.v.m. facturatie</option>
                                 <option value="Defect"> Er is schade aan mijn product</option>
-                                <option value="order"> Ik heb een vraag over mijn aankoop</option>
-                                <option value="other"> Ik heb een andere vraag</option>
+                                <option value="Order"> Ik heb een vraag over mijn aankoop</option>
+                                <option value="Other"> Ik heb een andere vraag</option>
                             </select>
                             <p id="asterix">*</p>
                         </div>
                         <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
-                        <input class="button-reset" type="reset" value="Reset" />
-                        <input class="button-send" type="submit" value="Verzenden" />
+                        <input class="button-reset" type="reset" value="Reset"/>
+                        <input class="button-send" type="submit" value="Verzenden"/>
                         <p id="required">*Deze velden zijn verplicht</p>
                 </fieldset>
             </form>
