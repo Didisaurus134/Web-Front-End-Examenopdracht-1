@@ -817,7 +817,7 @@ fieldset {
     margin: 50px auto;
     padding: 0px;
     font-size: 20px;
-    width: 224px;
+    width: 100%;
 
 }
 
@@ -846,6 +846,16 @@ fieldset {
 }
 
 .article-1-img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.article-2-img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.article-3-img {
     width: 100%;
     border-radius: 30px;
 }
@@ -1301,7 +1311,7 @@ fieldset {
     }
 
     .article-title {
-        width: 525px;
+        width: 100%;
 
     }
 
@@ -2052,7 +2062,7 @@ fieldset {
     .article-title {
         border: none;
         margin: 50px auto;
-        width: 770px;
+        width: 100%;
         padding: 0px;
         font-size: 40px;
 
@@ -2085,22 +2095,22 @@ fieldset {
         display: inline-block;
         width: 45%;
         border-radius: 30px;
-
-
-    }
-
-    .img-1 {
         float: left;
         margin: 40px 10px;
-
     }
 
-    .img-2 {
+    .article-2-img {
+        display: inline-block;
+        width: 45%;
+        border-radius: 30px;
         float: right;
         margin: 40px 0px;
     }
 
-    .img-3 {
+    .article-3-img {
+        display: inline-block;
+        width: 45%;
+        border-radius: 30px;
         float: left;
         margin: 40px 10px;
     }
@@ -2412,23 +2422,27 @@ fieldset {
         display: inline-block;
         width: 35%;
         border-radius: 30px;
-
-    }
-
-    .img-1 {
         float: left;
         margin: 40px 10px;
+
     }
 
-    .img-2 {
+   .article-2-img {
+    display: inline-block;
+        width: 35%;
+        border-radius: 30px;
         float: right;
         margin: 40px 0px;
-    }
+   }
 
-    .img-3 {
+   .article-3-img {
+        display: inline-block;
+        width: 35%;
+        border-radius: 30px;
         float: left;
         margin: 40px 10px;
-    }
+   }
+
 
     .item {
         width: 300px;
