@@ -105,9 +105,10 @@ details>summary {
     padding-left: 16px;
 }
 
+
 .nav-shops a:hover {
     background-color: rgb(114, 243, 215);
-    border-radius: 25px;
+    
 }
 
 .nav-shops a:active {
