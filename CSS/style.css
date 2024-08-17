@@ -646,9 +646,18 @@ fieldset input {
 }
 
 fieldset {
-    display: inline-block;
+    display: block;
     border: none;
     width: 200px;
+    margin-right: auto;
+    margin-left: auto; 
+    padding: 0px;
+}
+
+
+.name {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .radio-buttons {
@@ -723,7 +732,18 @@ fieldset {
     border-radius: 25px;
 }
 
-.button {
+.button-reset {
+    display: inline-block;
+    font-family: myFirstfont;
+    font-size: 15px;
+    background-color: rgb(181, 242, 230);
+    margin: 5px auto;
+    height: 1.5rem;
+    width: 10rem;
+    font-weight: bold;
+}
+
+.button-send {
     display: inline-block;
     font-family: myFirstfont;
     font-size: 15px;
@@ -858,9 +878,11 @@ fieldset {
     }
 
     fieldset {
-        display: inline-block;
+        display: block;
         border: none;
-        width: 330px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .radio-buttons {
@@ -944,7 +966,7 @@ fieldset {
     #required {
         display: block;
         margin: 20px 5px;
-        font-size: 8px;
+        font-size: 9px;
         font-family: 'MyFirstFont', sans-serif;
     }
 
@@ -1223,7 +1245,7 @@ fieldset {
     .items {
         grid-area: items;
         display: flex;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 40px;
     }
@@ -1305,98 +1327,108 @@ fieldset {
         margin: 80px auto;
         border-radius: 30px;
         border: solid 1px black;
+        
     }
 
     fieldset label {
         display: inline-block;
-        width: 14rem;
+        width: 300px;
         font-size: 10px;
         margin: 5px 5px;
+        padding-left: 15px;
         font-family: 'myFirstFont', sans-serif;
     }
 
     fieldset input {
         display: inline-block;
-        width: 15rem;
+        width: 300px;
         height: 1rem;
         border-radius: 25px;
         border: solid 0.5px grey;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     fieldset {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "contact-title contact-title contact-title""label-lastname input-lastname input-lastname"
-         "label-firstname input-firstname input-firstname" "radio-buttons radio-buttons aside" 
-         "label-streetname input-streetname input-streetname" "label-postcode input-postcode input-postcode" 
-         "label-city input-city input-city" "label-telephone input-telephone input-telephone" 
-         "label-email input-email input-email" "questions questions asterix" "answers answers answers" 
-         "buttons buttons buttons" "required required required";
         border: none;
-        width: 680px;
+        width: 600pxpx;
+
+    }
+
+    .name {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "lastname firstname";
     }
 
     .lastname {
-        grid-area: label-lastname;
-    }
-
-    #lastname {
-        grid-area: input-lastname;
+        grid-area: lastname;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 
     .firstname {
-        grid-area: label-firstname;
+        grid-area: firstname;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 
-    #firstname {
-        grid-area: input-firstname;
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "streetname streetname" "postcode city" "telephone email";
+        margin-bottom: 10px;
     }
 
     .streetname {
-        grid-area: label-streetname;
+        grid-area: streetname;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    #streetname {
-        grid-area: input-streetname;
+    .streetname-1 {
+        width: 622px;
     }
+
+
 
     .postcode {
-        grid-area: label-postcode;
-    }
-
-    #postcode {
-        grid-area: input-postcode;
+        grid-area: postcode;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .city {
-        grid-area: label-city;
-    }
-
-    #city {
-        grid-area: input-city;
+        grid-area: city;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .telephone {
-        grid-area: label-telephone;
-    }
-
-    #telephone {
-        grid-area: input-telephone;
+        grid-area: telephone;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .email {
-        grid-area: label-email;
+        grid-area: email;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    #email {
-        grid-area: input-email;
-    }
-
+   
     .radio-buttons {
         grid-area: radio-buttons;
         display: grid;
+        width: 400px;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas: "radio-man label-man radio-woman label-woman radio-x label-x";
+        padding-bottom: 5px;
+        padding-left: 10px;
     }
 
     .radio-man {
@@ -1438,17 +1470,21 @@ fieldset {
         width: 100px;
     }
 
+    .questions {
+        margin: 10px;
+    }
+
     #questions {
         grid-area: questions;
         display: inline-block;
         background-color: rgb(248, 180, 190);
-        width: 11rem;
+        width: 320px;
         height: 2rem;
         font-family: myFirstFont;
         font-size: 15px;
         border-radius: 25px;
         text-align: center;
-        margin: 10px 0px;
+        margin: 10px auto;
     }
 
     #asterix {
@@ -1459,7 +1495,7 @@ fieldset {
 
     #answers {
         grid-area: answers;
-        width: 12rem;
+        width: 600px;
         height: 8rem;
         font-family: 'Source Sans 3', sans-serif;
         font-size: 15px;
@@ -1468,8 +1504,20 @@ fieldset {
         border-radius: 25px;
     }
 
-    .button {
-        grid-area: button;
+    .button-reset {
+        grid-area: button-reset;
+        display: inline-block;
+        font-family: myFirstfont;
+        font-size: 15px;
+        background-color: rgb(181, 242, 230);
+        margin: 5px 20px;
+        height: 1.5rem;
+        width: 10rem;
+        font-weight: bold;
+    }
+
+    .button-send {
+        grid-area: button-send;
         display: inline-block;
         font-family: myFirstfont;
         font-size: 15px;
@@ -1483,8 +1531,8 @@ fieldset {
     #required {
         grid-area: required;
         display: block;
-        margin: 20px 5px;
-        font-size: 8px;
+        margin: 20px 20px;
+        font-size: 9px;
         font-family: 'MyFirstFont', sans-serif;
     }
 
@@ -1913,15 +1961,15 @@ fieldset {
     fieldset label {
         display: inline-block;
         width: 14rem;
-        font-size: 25px;
+        font-size: 15px;
         margin: 15px 10px;
         font-family: 'myFirstFont', sans-serif;
     }
 
     fieldset input {
         display: inline-block;
-        width: 33rem;
-        height: 2rem;
+        width: 15rem;
+        height: 1rem;
         border-radius: 25px;
         margin: 0px 5px;
     }
