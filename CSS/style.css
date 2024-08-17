@@ -66,11 +66,16 @@ a {
     display: none;
 }
 
-.header a:hover {
+.header a {
     padding: 0px 5px;
-    background-color: rgb(114, 243, 215);
     border-radius: 25px;
 }
+
+.header a:hover {
+    background-color: rgb(114, 243, 215);
+}
+
+
 
 .nav-footer a:hover {
     padding: 0px 7px;
