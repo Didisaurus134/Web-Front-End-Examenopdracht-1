@@ -1572,6 +1572,10 @@ fieldset {
 
 
 @media only screen and (min-width: 1100px) {
+
+    h1 {
+        margin-top: 150px;
+    }
     body {
         background-color: rgb(181, 242, 230);
         display: grid;
@@ -2049,7 +2053,7 @@ fieldset {
         display: block;
         background-color: white;
         border: double 5px black;
-        margin: 50px auto 0px auto;
+        margin: 150px auto 0px auto;
         border-radius: 30px;
         align-content: center;
         padding: 20px 50px 0px 50px;
@@ -2059,6 +2063,7 @@ fieldset {
     .article-title {
         border: none;
         margin: 50px auto;
+        width: 770px;
         padding: 0px;
         font-size: 40px;
 
@@ -2286,6 +2291,50 @@ fieldset {
         font-family: 'myFirstFont', sans-serif;
     }
 
+.categorie-shop-1 {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        background-color: rgb(181, 242, 230);
+        border: 1px solid black;
+        border-radius: 30px;
+        grid-area: cat-shop-1;
+        font-family: 'myFirstFont', sans-serif;
+    }
+
+    .categorie-shop-2 {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        background-color: rgb(181, 242, 230);
+        border: 1px solid black;
+        border-radius: 30px;
+        grid-area: cat-shop-2;
+        font-family: 'myFirstFont', sans-serif;
+    }
+
+    .categorie-shop-3 {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        background-color: rgb(181, 242, 230);
+        border: 1px solid black;
+        border-radius: 30px;
+        grid-area: cat-shop-3;
+        font-family: 'myFirstFont', sans-serif;
+    }
+
+    .categorie-shop-4 {
+        height: 200px;
+        width: 200px;
+        padding: 30px;
+        background-color: rgb(181, 242, 230);
+        border: 1px solid black;
+        border-radius: 30px;
+        grid-area: cat-shop-4;
+        font-family: 'myFirstFont', sans-serif;
+    }
+
     .item {
 
         width: 200px;
@@ -2332,7 +2381,7 @@ fieldset {
         display: block;
         background-color: white;
         border: double 5px black;
-        margin: 50px auto;
+        margin: 150px auto 50px;
         border-radius: 30px;
         align-content: center;
         padding: 20px 50px 0px 50px;
