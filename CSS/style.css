@@ -75,12 +75,13 @@ a {
     background-color: rgb(114, 243, 215);
 }
 
-
+.nav-footer a {
+    padding: 0px 7px;
+    border-radius: 25px;
+}
 
 .nav-footer a:hover {
-    padding: 0px 7px;
     background-color: rgb(114, 243, 215);
-    border-radius: 25px;
 }
 
 details {
