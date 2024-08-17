@@ -2451,6 +2451,11 @@ fieldset {
         margin-top: 50px;
         width: 300px;
     }
+
+    .bestseller-item {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media only screen and (min-width: 2150px) {
