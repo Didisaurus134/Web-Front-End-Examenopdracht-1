@@ -90,8 +90,13 @@ details>summary {
 }
 
 .nav-shops {
+    position: absolute;
     list-style-type: none;
     background-color: rgb(181, 242, 230);
+    border-radius: 20px;
+    padding-right: 17px;
+    padding-bottom: 10px;
+    padding-left: 16px;
 }
 
 .nav-shops a:hover {
@@ -183,7 +188,7 @@ a:active {
 }
 
 h1 {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 
