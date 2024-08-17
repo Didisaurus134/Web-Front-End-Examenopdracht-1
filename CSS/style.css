@@ -2084,18 +2084,18 @@ fieldset {
 
     }
 
-    #img-1 {
+    .img-1 {
         float: left;
         margin: 40px 10px;
 
     }
 
-    #img-2 {
+    .img-2 {
         float: right;
         margin: 40px 0px;
     }
 
-    #img-3 {
+    .img-3 {
         float: left;
         margin: 40px 10px;
     }
@@ -2410,17 +2410,17 @@ fieldset {
 
     }
 
-    #img-1 {
+    .img-1 {
         float: left;
         margin: 40px 10px;
     }
 
-    #img-2 {
+    .img-2 {
         float: right;
         margin: 40px 0px;
     }
 
-    #img-3 {
+    .img-3 {
         float: left;
         margin: 40px 10px;
     }
