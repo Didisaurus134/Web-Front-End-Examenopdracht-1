@@ -1960,7 +1960,7 @@ fieldset {
 
     fieldset label {
         display: inline-block;
-        width: 14rem;
+        width: 22rem;
         font-size: 15px;
         margin: 15px 10px;
         font-family: 'myFirstFont', sans-serif;
@@ -1968,12 +1968,19 @@ fieldset {
 
     fieldset input {
         display: inline-block;
-        width: 15rem;
-        height: 1rem;
+        width: 22rem;
+        height: 1.5rem;
         border-radius: 25px;
         margin: 0px 5px;
     }
 
+    .radio-buttons {
+        padding-top: 10px;
+    }
+
+    .streetname-1 {
+        width: 745px;
+    }
 
     #questions {
         display: inline-block;
@@ -1991,7 +1998,7 @@ fieldset {
     #answers {
         width: 49rem;
         font-family: 'Source Sans 3', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 25px;
     }
 
@@ -2004,6 +2011,10 @@ fieldset {
         height: 3rem;
         width: 15rem;
         font-weight: bold;
+    }
+
+    #required {
+        font-size: 11px;
     }
 
 
