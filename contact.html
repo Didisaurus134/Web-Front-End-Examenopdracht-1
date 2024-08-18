@@ -16,17 +16,19 @@
         <nav>
             <ul class="nav-header">
                 <li class="navigation-header"><a href="index.html">Home</a></li>
-                <details class="navigation-header">
-                    <summary>
-                        <li class="navigation-shop"><a href="shop.html">Shop</a></li>
-                    </summary>
-                    <ul class="nav-shops">
-                        <li><a href="clothing.html">Kledij</a></li>
-                        <li><a href="fossils.html">Fossielen</a></li>
-                        <li><a href="gadgets.html">Gadgets</a></li>
-                        <li><a href="jewelry.html">Juwelen</a></li>
-                    </ul>
+                <li>
+                    <details class="navigation-header">
+                        <summary>
+                <li class="navigation-shop"><a href="shop.html">Shop</a></li>
+                </summary>
+                <ul class="nav-shops">
+                    <li class="li-shop"><a href="clothing.html">Kledij</a></li>
+                    <li class="li-shop"><a href="fossils.html">Fossielen</a></li>
+                    <li class="li-shop"><a href="gadgets.html">Gadgets</a></li>
+                    <li class="li-shop"><a href="jewelry.html">Juwelen</a></li>
+                </ul>
                 </details>
+                </li>
                 <li class="navigation-header"><a href="news.html">Nieuws</a></li>
                 <li class="navigation-header"><a href="contact.html">Contact</a></li>
             </ul>
@@ -39,63 +41,63 @@
         <div class="form">
             <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
                 <fieldset>
-                        <p id="contact">Contact formulier</p>
-                        <div class="name">
-                            <div class="lastname">
-                                <label for="lastname">Naam*</label>
-                                <input id="lastname" name="lastname" type="text" required>
-                            </div>
-                            <div class="firstname">
-                                <label for="firstname">Voornaam*</label>
-                                <input id="firstname" name="firstname" type="text" required>
-                            </div>
+                    <p id="contact">Contact formulier</p>
+                    <div class="name">
+                        <div class="lastname">
+                            <label for="lastname">Naam*</label>
+                            <input id="lastname" name="lastname" type="text" required>
                         </div>
-                        <div class="radio-buttons">
-                            <input class="radio-man" type="radio" name="Geslacht" id="Man" checked="checked">
-                            <label class="label-man" for="Man">Man</label>
-                            <input class="radio-woman" type="radio" name="Geslacht" id="Vrouw">
-                            <label class="label-woman" for="Vrouw">Vrouw</label>
-                            <input class="radio-x" type="radio" name="Geslacht" id="X">
-                            <label class="label-x" for="X">X</label>
+                        <div class="firstname">
+                            <label for="firstname">Voornaam*</label>
+                            <input id="firstname" name="firstname" type="text" required>
                         </div>
-                        <div class="contact-info">
-                            <div class="streetname">
-                                <label class="streetname-1" for="streetname">Straatnaam + nr</label>
-                                <input id="streetname"  class="streetname-1" name="streetname and number" type="text">
-                            </div>
-                            <div class="postcode">
-                                <label for="postcode">Postcode</label>
-                                <input id="postcode" name="postcode" type="text">
-                            </div>
-                            <div class="city">
-                                <label for="city">Woonplaats</label>
-                                <input id="city" name="city" type="text">
-                            </div>
-                            <div class="telephone">
-                                <label for="telephone">Telefoonnummer</label>
-                                <input id="telephone" name="telephone number" type="tel">
-                            </div>
-                            <div class="email">
-                                <label for="email">E-mail adres*</label>
-                                <input id="email" name="e-mail" type="email" required>
-                            </div>
+                    </div>
+                    <div class="radio-buttons">
+                        <input class="radio-man" type="radio" name="Geslacht" id="Man" checked="checked">
+                        <label class="label-man" for="Man">Man</label>
+                        <input class="radio-woman" type="radio" name="Geslacht" id="Vrouw">
+                        <label class="label-woman" for="Vrouw">Vrouw</label>
+                        <input class="radio-x" type="radio" name="Geslacht" id="X">
+                        <label class="label-x" for="X">X</label>
+                    </div>
+                    <div class="contact-info">
+                        <div class="streetname">
+                            <label class="streetname-1" for="streetname">Straatnaam + nr</label>
+                            <input id="streetname" class="streetname-1" name="streetname and number" type="text">
                         </div>
-                        <div class="questions">
-                            <select name="Wat is uw vraag" id="questions" size="7" required>
-                                <option value="PlaceOrder">Ik wil een order plaatsen</option>
-                                <option value="Article"> Ik heb een vraag over een artikel</option>
-                                <option value="Delivery"> Ik heb een vraag over de levertijd</option>
-                                <option value="Invoice"> Ik heb een vraag i.v.m. facturatie</option>
-                                <option value="Defect"> Er is schade aan mijn product</option>
-                                <option value="Order"> Ik heb een vraag over mijn aankoop</option>
-                                <option value="Other"> Ik heb een andere vraag</option>
-                            </select>
-                            <p id="asterix">*</p>
+                        <div class="postcode">
+                            <label for="postcode">Postcode</label>
+                            <input id="postcode" name="postcode" type="text">
                         </div>
-                        <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
-                        <input class="button-reset" type="reset" value="Reset">
-                        <input class="button-send" type="submit" value="Verzenden">
-                        <p id="required">*Deze velden zijn verplicht</p>
+                        <div class="city">
+                            <label for="city">Woonplaats</label>
+                            <input id="city" name="city" type="text">
+                        </div>
+                        <div class="telephone">
+                            <label for="telephone">Telefoonnummer</label>
+                            <input id="telephone" name="telephone number" type="tel">
+                        </div>
+                        <div class="email">
+                            <label for="email">E-mail adres*</label>
+                            <input id="email" name="e-mail" type="email" required>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <select name="Wat is uw vraag" id="questions" size="7" required>
+                            <option value="PlaceOrder">Ik wil een order plaatsen</option>
+                            <option value="Article"> Ik heb een vraag over een artikel</option>
+                            <option value="Delivery"> Ik heb een vraag over de levertijd</option>
+                            <option value="Invoice"> Ik heb een vraag i.v.m. facturatie</option>
+                            <option value="Defect"> Er is schade aan mijn product</option>
+                            <option value="Order"> Ik heb een vraag over mijn aankoop</option>
+                            <option value="Other"> Ik heb een andere vraag</option>
+                        </select>
+                        <p id="asterix">*</p>
+                    </div>
+                    <textarea name="answers" id="answers" rows="5" cols="20" required></textarea> <br><br>
+                    <input class="button-reset" type="reset" value="Reset">
+                    <input class="button-send" type="submit" value="Verzenden">
+                    <p id="required">*Deze velden zijn verplicht</p>
                 </fieldset>
             </form>
         </div>
