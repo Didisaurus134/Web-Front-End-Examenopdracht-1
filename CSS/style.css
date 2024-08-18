@@ -975,9 +975,9 @@ fieldset {
         display: inline-block;
         background-color: rgb(248, 180, 190);
         width: 17rem;
-        height: 2rem;
+        height: 1rem;
         font-family: myFirstFont;
-        font-size: 15px;
+        font-size: 10px;
         border-radius: 25px;
         text-align: center;
         margin: 10px 0px;
