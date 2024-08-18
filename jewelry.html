@@ -1,81 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juwelen</title>
     <link rel="stylesheet" href="CSS/style.css">
-    
+
 </head>
-<body>
-
-    <main>
-
-        <div class="header">
-            <img src="/Foto's gadgets/logo/logo treasure-rex.jpg" alt="Logo Treasure-Rex" class="logo" id="first-aside">
-            <header>
-                <nav>
-                    <ul class="header-ul">
-                        <li class="li-1"><a href="index.html">Home</a></li>
-                        <li class="li-1"><a href="shop.html">Shop</a></li>
-                        <li class="li-1"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+    <body>
+        <header class="header">
+            <img class="logo" src="Pictures/logo/logo-treasure-rex.jpg" alt="Logo-treasure-rex">
+            <nav>
+                <ul class="nav-header">
+                    <li class="navigation-header"><a href="index.html">Home</a></li>
+                    <li>
+                        <details class="navigation-header">
+                            <summary>
+                                <a class="navigation-shop" href="shop.html">Shop</a>
+                            </summary>
+                            <ul class="nav-shops">
+                                <li class="li-shop"><a href="clothing.html">Kledij</a></li>
+                                <li class="li-shop"><a href="fossils.html">Fossielen</a></li>
+                                <li class="li-shop"><a href="gadgets.html">Gadgets</a></li>
+                                <li class="li-shop"><a href="jewelry.html">Juwelen</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li class="navigation-header"><a href="news.html">Nieuws</a></li>
+                    <li class="navigation-header"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img class="basket" src="Pictures/logo/heart.jpg" alt="Shoppingbasket-login">
     
-        <section id="gadgets">
-            
-            <div class="border">
-                <img class="image1" src="Foto's gadgets/Juwelen/anky pin.jpg" alt="Ankylosaurus broche">
-                <h2 class="summary">Ankylosaurus broche pin</h2>
-                <p class="summary">Verfraai je kleding met deze elegante Ankylosaurus broche. Een verfijnd stuk dat elke outfit een unieke en stijlvolle touch geeft.<br><br> Prijs: &euro;6,95</p>
+        </header>
+
+        <main class="main-items">
+            <div class="chatbutton-fixed"><img class="chatbutton" src="Pictures/logo/Chat-button.jpg" alt="Chatknop">
             </div>
-            <div class="border">
-                <img class="image1" src="Foto's gadgets/Juwelen/cute-dinosaur-necklace.jpg" alt="ketting met een langnek hangertje">
-                <h2 class="summary">Ketting met een langnek hangertje</h2>
-                <p class="summary">Voeg een vleugje prehistorische charme toe aan je outfit met deze prachtige dinosaurus ketting. Een subtiel maar opvallend accessoire voor elke gelegenheid<br><br> Prijs: &euro;16,95</p>
-                
-            </div>
-        </section>
-            <section id="gadgets-2">
-    
-            
+            <section class="items">
+
+
                 <div class="border">
-                    <img class="image1" src="Foto's gadgets/Juwelen/dino bracelet.jpg" alt="Dinosaurus vriendschapsbandje">
-                    <h2 class="summary">Dinosaurus vriendschapsarmband</h2>
-                    <p class="summary">Vier je vriendschap met deze schattige dinosaurus vriendschapsarmband. Een perfect geschenk om te delen met je beste vriend, symbolisch voor een band die sterker is dan tijd. <br><br> Prijs: &euro;13,95</p>
+                    <img class="item" src="Pictures/Jewerly/Amber-necklace.jpg" alt="Ketting met amber hangertje">
+                    <h2 class="summary-h2">Ketting met amber hangertje</h2>
+                    <p class="summary">Deze elegante ketting is perfect om elke outfit af te werken.</p>
+                    <p class="price"> Prijs: &euro;16,95</p>
                 </div>
                 <div class="border">
-                <img class="image1" src="Foto's gadgets/Juwelen/dino earring 1.jpg" alt="Oorbellen in de vorm van een dino">
-                <h2 class="summary">Dinosaurus oorbellen</h2>
-                <p class="summary">Maak je look compleet met deze mooie dinosaurus oorbellen. Speels en elegant, ze zijn perfect voor zowel dagelijks gebruik als speciale gelegenheden. <br><br><br> Prijs: &euro;13,95</p>
-                
-            </div>
-            <div class="chatbutton"><img id="chatbutton" src="Foto's gadgets/logo/Chat-button.jpg" alt="Chatknop"></div>
-        </section>
-    
-    
-        <div id="footer-categories">
-            <img src="/Foto's gadgets/logo/logo treasure-rex.jpg" alt="Logo Treasure-Rex" class="logo-footer">
+                    <img class="item" src="Pictures/Jewerly/anky-pin.jpg" alt="broche Ankylosaurus">
+                    <h2 class="summary-h2">Ankylosaurus broche pin</h2>
+                    <p class="summary">Verfraai je kleding met deze elegante Ankylosaurus broche. Een verfijnd stuk dat
+                        elke outfit een unieke en stijlvolle touch geeft.</p>
+                    <p class="price"> Prijs: &euro;9,95</p>
+                </div>
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/cute-dinosaur-necklace.jpg" alt="Dinosaurus ketting">
+                    <h2 class="summary-h2">Ketting met langnek hangertje </h2>
+                    <p class="summary">Voeg een vleugje prehistorische charme toe aan je outfit met deze prachtige
+                        dinosaurus ketting. Een subtiel maar opvallend accessoire voor elke gelegenheid.</p>
+                    <p class="price"> Prijs: &euro;16,95</p>
+                </div>
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/dino-bracelet.jpg" alt="dinosaurus armbandje">
+                    <h2 class="summary-h2">Dinosaurus vriendschapsbandje</h2>
+                    <p class="summary">Vier je vriendschap met deze schattige dinosaurus vriendschapsarmband. Een
+                        perfect geschenk om te delen met je beste vriend, symbolisch voor een band die sterker is dan
+                        tijd.</p>
+                    <p class="price"> Prijs: &euro;13,95</p>
+                </div>
+
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/dino-earring-1.jpg" alt="Dinosaurus oorbellen">
+                    <h2 class="summary-h2"> Gouden dinosaurus oorbellen</h2>
+                    <p class="summary">Maak je look compleet met deze mooie dinosaurus oorbellen. Speels en elegant, ze
+                        zijn perfect voor zowel dagelijks gebruik als speciale gelegenheden.</p>
+                    <p class="price"> Prijs: &euro;13,95</p>
+                </div>
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/dino-keychain.jpg" alt="Dinosaurus sleutelhanger">
+                    <h2 class="summary-h2"> Schattige dinosaurus sleutelhanger </h2>
+                    <p class="summary">Je sleutelbos wat opfleuren? Deze schattige sleutelhanger maakt van jou
+                        sleutelbos de leukste die er is.</p>
+                    <p class="price"> Prijs: &euro;25,95</p>
+                </div>
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/ezgif-2-97f260ed09.jpg" alt="Dinosaurus juwelenhouder">
+                    <h2 class="summary-h2"> Juwelenhouder met dinosaurus </h2>
+                    <p class="summary">Al die leuke juwelen op een veilige plaats bewaren? Dit leuke juwelhoudertje is
+                        perfect voor het bewaren van de mooiste juwelen.</p>
+                    <p class="price"> Prijs: &euro;19,95</p>
+                </div>
+                <div class="border">
+                    <img class="item" src="Pictures/Jewerly/tooth-necklace.jpg" alt="Ketting met tand hangertje">
+                    <h2 class="summary-h2"> Ketting met fossiele namaaktand </h2>
+                    <p class="summary">Je outfit wat pittiger maken? Deze ketting met fossiele namaaktand is de perfecte
+                        finishing touch om je outfit wat uitdagender te maken.</p>
+                    <p class="price"> Prijs: &euro;9,95</p>
+                </div>
+            </section>
+            <p class="disclaimer">Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website
+                zijn fictief en hebben louter educatieve doeleinden</p>
+        </main>
+
         <footer>
             <p class="text-footer">
                 Treasure-Rex <br>
                 Ankylosauruslaan 68 <br>
                 7320 Bernissart <br>
-                contact@treasure-rex.be <br><br>
-                &copy; Oomens Didi - WFB@Home - Howest 
+                contact@treasure-rex.be
             </p>
-            <ul class="ul-footer">
-                <li class="navigatie-footer"><a href="index.html">Home</a></li>
-                <li class="navigatie-footer"><a href="shop.html">Shop</a></li>
-                <li class="navigatie-footer"><a href="contact.html">Contact</a></li></ul>
-            <br><br><br>
-           
+            <nav>
+                <ul class="nav-footer">
+                    <li class="navigation-footer"><a href="index.html">Home</a></li>
+                    <li class="navigation-footer"><a href="shop.html">Shop</a></li>
+                    <li class="navigation-footer"><a href="news.html">Nieuws</a></li>
+                    <li class="navigation-footer"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copywrite"> &copy; Oomens Didi - WFB@Home - Howest </p>
+            <img class="logo-footer" src="Pictures/logo/logo-treasure-rex.jpg" alt="logo treasure-rex">
         </footer>
-        </div>
-        <p class="disclaimer-categories">“Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.”</p>
-    </main>
-    
-</body>
+
+    </body>
+
 </html>
