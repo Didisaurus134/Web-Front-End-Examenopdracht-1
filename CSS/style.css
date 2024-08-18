@@ -133,12 +133,6 @@ details[open] summary {
     border-radius: 30px;
 }
 
-/* main {
-    grid-area: main;
-    display: grid;
-    grid-template-areas: "aside" "main-information" "disclaimer";
-} */
-
 .main-home {
     grid-area: main;
     display: grid;
@@ -2099,7 +2093,6 @@ fieldset {
     }
 
     .article-1-img {
-        display: inline-block;
         width: 45%;
         border-radius: 30px;
         float: left;
@@ -2107,7 +2100,6 @@ fieldset {
     }
 
     .article-2-img {
-        display: inline-block;
         width: 45%;
         border-radius: 30px;
         float: right;
@@ -2115,7 +2107,6 @@ fieldset {
     }
 
     .article-3-img {
-        display: inline-block;
         width: 45%;
         border-radius: 30px;
         float: left;
@@ -2404,7 +2395,7 @@ fieldset {
 
     .article-1-textblock {
         display: inline-block;
-        width: 45%;
+        width: 500px;
         margin: 20px;
     }
 
@@ -2417,6 +2408,7 @@ fieldset {
 
     .article-1-textblock p {
         margin: 20px;
+        width: 500px;
     }
 
     .artikel {
@@ -2426,7 +2418,6 @@ fieldset {
     }
 
     .article-1-img {
-        display: inline-block;
         width: 35%;
         border-radius: 30px;
         float: left;
@@ -2435,7 +2426,6 @@ fieldset {
     }
 
    .article-2-img {
-    display: inline-block;
         width: 35%;
         border-radius: 30px;
         float: right;
@@ -2443,7 +2433,6 @@ fieldset {
    }
 
    .article-3-img {
-        display: inline-block;
         width: 35%;
         border-radius: 30px;
         float: left;
